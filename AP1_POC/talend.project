@@ -102,6 +102,7 @@
       <relatedItems xmi:id="_lzGgrqRJEei2LLUT3N3rjQ" id="DQTechnical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_lzGgr6RJEei2LLUT3N3rjQ" id="GetRandomPhoneNum" version="Latest" type="routine"/>
       <relatedItems xmi:id="_lzGgsKRJEei2LLUT3N3rjQ" id="MDM" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_H188QKVNEei2LLUT3N3rjQ" id="TalendStringUtil" version="Latest" type="routine"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_GH5fAKVNEei2LLUT3N3rjQ">
       <baseItem xmi:id="_GH5fAaVNEei2LLUT3N3rjQ" id="_Y_fAcKPWEei3TegCyHblqA" version="0.1" type="job"/>
