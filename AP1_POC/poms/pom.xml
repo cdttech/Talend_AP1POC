@@ -11,8 +11,8 @@
   <modules>
     <module>code/routines</module>
     <module>jobs/process/demo/onboardingdemojob_0.1</module>
-    <module>jobs/process/AP1_POC/restconsumer_0.1</module>
     <module>jobs/process/AP1_POC/webpossprovider_0.1</module>
+    <module>jobs/process/AP1_POC/webpossconsumer_0.1</module>
   </modules>
   <properties>
     <talend.project.name>AP1_POC</talend.project.name>
