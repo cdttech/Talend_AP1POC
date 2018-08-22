@@ -21,6 +21,7 @@
     <module>jobs/process/AP1_POC/datapax_ops_provider_0.1</module>
     <module>jobs/process/AP1_POC/data_pax_external_provider_0.1</module>
     <module>jobs/process/AP1_POC/product_provider_0.1</module>
+    <module>jobs/process/AP1_POC/hq_fids_post_0.1</module>
   </modules>
   <properties>
     <talend.project.name>AP1_POC</talend.project.name>
