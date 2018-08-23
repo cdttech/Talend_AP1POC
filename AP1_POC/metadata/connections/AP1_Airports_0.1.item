@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmi:version="2.0">
-  <TalendMetadata:DatabaseConnection AdditionalParams="noDatetimeStringSync=true" DatabaseType="MySQL" DatasourceName="" DbmsId="mysql_id" DriverClass="org.gjt.mm.mysql.Driver" FileFieldName="" NullChar="" Password="C/vyLrnO43Aw4wBXGWNeeQ==" Port="3306" ProductId="MYSQL" SID="" SQLMode="false" ServerName="192.168.254.181" SqlSynthax="" StandardSQL="true" StringQuote="" URL="jdbc:mysql://192.168.254.181:3306/?noDatetimeStringSync=true" UiSchema="" Username="root" dataPackage="_0OPDkKaxEei2LLUT3N3rjQ _0OPDkaaxEei2LLUT3N3rjQ _0OPDkqaxEei2LLUT3N3rjQ _0OPDk6axEei2LLUT3N3rjQ _0OPDlKaxEei2LLUT3N3rjQ _0OPDlaaxEei2LLUT3N3rjQ _0OPDlqaxEei2LLUT3N3rjQ _0OPDl6axEei2LLUT3N3rjQ _0OPDmKaxEei2LLUT3N3rjQ" dbVersionString="MYSQL_5" id="_YWZaAKaxEei2LLUT3N3rjQ" label="AP1_Airports" name="AP1_Airports" xmi:id="_0Mwc4KaxEei2LLUT3N3rjQ">
-    <taggedValue tag="Is Conn Need Reload" value="false" xmi:id="_0Mwc4aaxEei2LLUT3N3rjQ"/>
+  <TalendMetadata:DatabaseConnection AdditionalParams="noDatetimeStringSync=true" DatabaseType="MySQL" DatasourceName="" DbmsId="mysql_id" DriverClass="org.gjt.mm.mysql.Driver" FileFieldName="" NullChar="" Password="C/vyLrnO43Aw4wBXGWNeeQ==" Port="3306" ProductId="MYSQL" SID="AP1_AIRPORTS" SQLMode="false" ServerName="192.168.254.181" SqlSynthax="" StandardSQL="true" StringQuote="" URL="jdbc:mysql://192.168.254.181:3306/AP1_AIRPORTS?noDatetimeStringSync=true" UiSchema="" Username="root" dataPackage="_8WMpMKaxEei2LLUT3N3rjQ" dbVersionString="MYSQL_5" id="_YWZaAKaxEei2LLUT3N3rjQ" label="AP1_Airports" name="AP1_Airports" xmi:id="_0Mwc4KaxEei2LLUT3N3rjQ">
+    <taggedValue tag="Is Conn Need Reload" value="true" xmi:id="_0Mwc4aaxEei2LLUT3N3rjQ"/>
     <taggedValue tag="package filter" value="" xmi:id="_0NhR4KaxEei2LLUT3N3rjQ"/>
     <taggedValue tag="Status" value="" xmi:id="_0Nh48KaxEei2LLUT3N3rjQ"/>
     <taggedValue tag="Version" value="0.1" xmi:id="_0Nh48aaxEei2LLUT3N3rjQ"/>
@@ -12,23 +12,16 @@
     <taggedValue tag="DB ProductVersion" value="5.7.23" xmi:id="_0Nqb0aaxEei2LLUT3N3rjQ"/>
     <taggedValue tag="DB IdentifierQuoteString" value="`" xmi:id="_0Nqb0qaxEei2LLUT3N3rjQ"/>
     <parameters key="CONN_PARA_KEY_USERNAME" value="root" xmi:id="_0Mwc4qaxEei2LLUT3N3rjQ"/>
+    <parameters key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value="" xmi:id="_5mBnoKaxEei2LLUT3N3rjQ"/>
   </TalendMetadata:DatabaseConnection>
-  <orgomg.cwm.resource.relational:Catalog dataManager="_0Mwc4KaxEei2LLUT3N3rjQ" name="information_schema" xmi:id="_0OPDkKaxEei2LLUT3N3rjQ"/>
-  <orgomg.cwm.resource.relational:Catalog dataManager="_0Mwc4KaxEei2LLUT3N3rjQ" name="AP1POC" xmi:id="_0OPDkaaxEei2LLUT3N3rjQ"/>
-  <orgomg.cwm.resource.relational:Catalog dataManager="_0Mwc4KaxEei2LLUT3N3rjQ" name="AP1_AIRPORTS" xmi:id="_0OPDkqaxEei2LLUT3N3rjQ"/>
-  <orgomg.cwm.resource.relational:Catalog dataManager="_0Mwc4KaxEei2LLUT3N3rjQ" name="AP1_HQ" xmi:id="_0OPDk6axEei2LLUT3N3rjQ"/>
-  <orgomg.cwm.resource.relational:Catalog dataManager="_0Mwc4KaxEei2LLUT3N3rjQ" name="mysql" xmi:id="_0OPDlKaxEei2LLUT3N3rjQ"/>
-  <orgomg.cwm.resource.relational:Catalog dataManager="_0Mwc4KaxEei2LLUT3N3rjQ" name="performance_schema" xmi:id="_0OPDlaaxEei2LLUT3N3rjQ"/>
-  <orgomg.cwm.resource.relational:Catalog dataManager="_0Mwc4KaxEei2LLUT3N3rjQ" name="sys" xmi:id="_0OPDlqaxEei2LLUT3N3rjQ"/>
-  <orgomg.cwm.resource.relational:Catalog dataManager="_0Mwc4KaxEei2LLUT3N3rjQ" name="talend_administrator" xmi:id="_0OPDl6axEei2LLUT3N3rjQ"/>
-  <orgomg.cwm.resource.relational:Catalog dataManager="_0Mwc4KaxEei2LLUT3N3rjQ" name="talend_dq" xmi:id="_0OPDmKaxEei2LLUT3N3rjQ"/>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_08603345-367b-427c-871b-03310beed2db"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>M+IFDMUjpl5ASi8dSkjq9gM9ALRX3BLuo66uZzQZ1omYKpuVASmnEa7jajE1sRZy68Gag/DwFdLY
-cudQwmAZnA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_fe2274d4-822d-4b7a-88ef-ed2815c98b7a"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>bE7K0A1Ih/4VFnm6mplwqeB4pSKjUz6LPKGupurAgXjNwQNXaar7T2pWq+GpGbVqmWyo+ZYq2KeZ
-0M9dVy87tg==</DigestValue></Reference></SignedInfo><SignatureValue>jkuZQsqvb1EB97SLrgQigIbTxKD/xT/HvubKCZ4z5YfOuBmRamfW/8tYcfVNa4Limo7pOY1kIm+x
-QBxZNfM+LWswjGj56nM5b1WKfk+4m8vOAmJME2NdkpVcCCzwfkCa2iEN0HRvXiYNTwYdvaiEOiyG
-bXc4CbPCdxbcIB7zlBmVvNO896WwI1A0E33lbaz2K3gD/nyVVC3pXYjRRb5C0Y9CSPAYRF63Veen
-TMKFBt8zvUXkFqlGsWmdNEiz2FqtpLJbUENvtidxDXSuw2SC1oGyNKdy7J2MhR7XsNdZu5eRvQPe
-YVubV8ij/zeBvC7Ka50uGbJpIZT03LlP7i8UHA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+  <orgomg.cwm.resource.relational:Catalog dataManager="_0Mwc4KaxEei2LLUT3N3rjQ" name="AP1_AIRPORTS" xmi:id="_8WMpMKaxEei2LLUT3N3rjQ"/>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_47dc10a5-2e25-42b2-a769-969306ee1f9b"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>uNq4Dbu5QqGWbLti/l6oqbee/pQ2EhmfDz3YevbfyN39Sb9NNQDbAB68k+UEsEVaTjMxIR1PEbgu
+vLFBNHKHgg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_128b1811-d4a1-44ac-b01e-6ede4d68769e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>sImT30e8R35gvEQR/PMUBvunDMdaPFxZdUvX7mdtLCs5KtwGfXVsC2/ja7q9rk+dAl3VhOGM6/d8
+dK3t2QjUmA==</DigestValue></Reference></SignedInfo><SignatureValue>zwZQoBD83TKayerngZAS4H2EgxumhX/IqQofw6d5cIFLnG6hi0BdJJACOg1c/rRplKx9vV9yf38r
+5VgffrGiIwsUdcy2kbezu9axhPZeo0ryqOocHvlqJU2tdgCCJ1jI9A8eW0CNu/Pm/DPRbjakvYgP
+1q6+bYX1ZNJbXTLaQDYPEGqLjU/EyaVZZZEBCeKur68ZnPPUh3Jrl1OAkijmMX4htyAa/qH8Kisk
+ZK2X1m8mzf06L1H1EiZgvmJ9PWJcsqtZI7Wjn1LhV5iYBhld6N0N9Eh0BU7Na30l0QAG9G+crSye
+52ONdh34EKZ1TNw1r1gDVpAoXqJEK+Yf40FRFg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -52,4 +45,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_fe2274d4-822d-4b7a-88ef-ed2815c98b7a" Target="#_08603345-367b-427c-871b-03310beed2db"><Timestamp>2018-08-23 08:52:18</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_128b1811-d4a1-44ac-b01e-6ede4d68769e" Target="#_47dc10a5-2e25-42b2-a769-969306ee1f9b"><Timestamp>2018-08-23 08:53:05</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
