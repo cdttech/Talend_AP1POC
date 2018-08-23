@@ -56,7 +56,7 @@
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
     <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
-    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/70 workspace/.metadata&quot;"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Talend/Workspace/.metadata&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
@@ -115,13 +115,13 @@
   <node componentName="tRESTRequest" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRESTRequest_1"/>
     <elementParameter field="EXTERNAL" name="OAS_IMPORT" value=""/>
-    <elementParameter field="TEXT" name="REST_ENDPOINT" value="&quot;http://localhost:8097/getDatapax_opsDetails&quot;"/>
+    <elementParameter field="TEXT" name="REST_ENDPOINT" value="&quot;http://192.168.254.180:8097/getDatapax_opsDetails&quot;"/>
     <elementParameter field="TABLE" name="SCHEMAS">
       <elementValue elementRef="SCHEMA" value="getDatapax_opsDetails"/>
       <elementValue elementRef="HTTP_VERB" value="GET"/>
       <elementValue elementRef="URI_PATTERN" value="&quot;/&quot;"/>
       <elementValue elementRef="CONSUMES" value="NONE"/>
-      <elementValue elementRef="PRODUCES" value="XML-JSON"/>
+      <elementValue elementRef="PRODUCES" value="JSON"/>
       <elementValue elementRef="STREAMING" value="false"/>
     </elementParameter>
     <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
@@ -370,6 +370,29 @@
     <metadata connector="FLOW" name="tRESTResponse_1">
       <column defaultValue="" key="false" length="0" name="body" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
     </metadata>
+  </node>
+  <node componentName="tMysqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_2"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_YWZaAKaxEei2LLUT3N3rjQ"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;192.168.254.181&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;AP1_AIRPORTS&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="p2FjNM2tw0r42mOnXDtqvA=="/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="AP1_Airports"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
   <connection connectorName="FLOW" label="getDatapax_opsDetails" lineStyle="0" metaname="getDatapax_opsDetails" offsetLabelX="0" offsetLabelY="0" source="tRESTRequest_1" target="tFlowToIterate_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -632,13 +655,18 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_cb7f3daf-c957-4b95-a2f6-59b26b71be9c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>kjvY0brhjRhwQEVT7+dHAqaQz6A/D6JD8qgFtt47ihHflzR0j4RZXrFlyTQfGur+aQ6YXnVKnXCz
-lao0quRYJg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_a677c94a-2cb7-4ab5-a189-73a7c6f34636"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>tiZP40wEajqCriDXi23fYIbzDxspIyDqGtERk9fKnqGi1aI+mdA8EjSYwWkE0jkoS0pwWv52Y2SU
-S9V1J/JYYA==</DigestValue></Reference></SignedInfo><SignatureValue>PJo8+6/sZRmHiF/pRfwqcPndTp6Vav9H42FkchEBJbSGhqBFU1ZoQwNUqg0U61uaFUj0OTCS3pxP
-asJ1SYfpkUr74p4V0MriwyXaEm1zhbn5nKd3/tnD2fGa3OdWZ6MAP8Xjc/hMaoIK8Wj4fO3EEDh4
-HwOSRpXQxj8m/DH7yQwBuajKpi7hTcJFdyGjcxszNEEIoavopaLCKA9OYyBhqft7f3hbYxIIod29
-r+fbFxsy9P7rvNq3gvzUUk13zS9WoPa9606JjTYQdKod7dxfnWnSvujnFV4Bd0alkKpHTys/2dHq
-e2Pil314THPAE1aAxaSX2JCQ8O5NL6pK57wM4g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_2f332101-350f-47c6-a10d-9afd4042a209"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Yb7rtxeO/Qd/fFJhUtYFzgWtvZhRMW855BU6UZojL7VNtmCihr0kwmjBtd7jtm9JgDI/aZxurGgY
+hKXPVmalyg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_87235364-bf06-4497-a0ad-50c04a09a98a"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>gUHmKWgFZvAsnUqJeHsET8PQxGcOiC3O5f2x2UyhtfLPsvhjPznyAI58Fa6NpFRk8rfNNHeN4M4l
+IulfWj5I+A==</DigestValue></Reference></SignedInfo><SignatureValue>GmkFEyCXDNB1Xu9X9xpNBPrIpbCfuQpaamJlFAfzsdEr29TOm2y8KtYGTs0i4bUBrl6Q6laImKmT
+/pk6+xI3wDFIYeF3Hz/BfA2kYsz4mnpWEAi5bhrwN9TT6FECYeuVWByDosPMTwJSF7exnMCWMFE+
+zhzxs9DHQlm+/UY84oByZZF7qVoOGAsqqFLWZgOWIoid5We66lUhqbPCK3E7iO7ofvgdAT/mOt2y
+HjCCdSzDpBigq2/1N++j4uuT1xEikqj0aGSDvzir3Dx5TBrAEMSG6WD5NcAKH8FdCuPZr4hcFOXY
+GcfnCr49jUVfMz6urPaKGH+ycCGN3cN5qzT6uA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -662,4 +690,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_a677c94a-2cb7-4ab5-a189-73a7c6f34636" Target="#_cb7f3daf-c957-4b95-a2f6-59b26b71be9c"><Timestamp>2018-08-22 17:57:46</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_87235364-bf06-4497-a0ad-50c04a09a98a" Target="#_2f332101-350f-47c6-a10d-9afd4042a209"><Timestamp>2018-08-23 09:47:25</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
