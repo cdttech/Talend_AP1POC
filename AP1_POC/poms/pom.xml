@@ -30,6 +30,7 @@
     <module>jobs/process/AP1_POC/hq_siopskom_post_0.1</module>
     <module>jobs/process/AP1_POC/hq_pots_post_0.1</module>
     <module>jobs/process/hq_fids_post_0.1</module>
+    <module>jobs/process/hq_cpms_post_0.1</module>
   </modules>
   <properties>
     <talend.project.name>AP1_POC</talend.project.name>
