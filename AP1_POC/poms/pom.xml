@@ -17,7 +17,6 @@
     <module>jobs/process/AP1_POC/cpmsprovider_0.1</module>
     <module>jobs/process/AP1_POC/trans_details_provider_0.1</module>
     <module>jobs/process/AP1_POC/datapax_scanbpprovider_0.1</module>
-    <module>jobs/process/AP1_POC/bp_airportprovider_0.1</module>
     <module>jobs/process/AP1_POC/datapax_ops_provider_0.1</module>
     <module>jobs/process/AP1_POC/data_pax_external_provider_0.1</module>
     <module>jobs/process/AP1_POC/product_provider_0.1</module>
@@ -32,6 +31,7 @@
     <module>jobs/process/AP1_POC/AP1_POC/getByID/getwebpossbycodeofitem_0.1</module>
     <module>jobs/process/AP1_POC/AP1_POC/getByID/getsiopskombyid_0.1</module>
     <module>jobs/process/AP1_POC/AP1_POC/getByID/getpotsbysea_code_0.1</module>
+    <module>jobs/process/AP1_POC/potsprovider_0.1</module>
   </modules>
   <properties>
     <talend.project.name>AP1_POC</talend.project.name>
