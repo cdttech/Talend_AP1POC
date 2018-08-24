@@ -106,29 +106,6 @@
     <routinesParameter id="_BpGMkKRJEei2LLUT3N3rjQ" name="TalendStringUtil"/>
     <routinesParameter id="_BnJr0KRJEei2LLUT3N3rjQ" name="TalendString"/>
   </parameters>
-  <node componentName="tMysqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="32">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_1"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_YWZaAKaxEei2LLUT3N3rjQ"/>
-    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;192.168.254.181&quot;"/>
-    <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;ap1_airports&quot;"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="p2FjNM2tw0r42mOnXDtqvA=="/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
-    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
-    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
-    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="AP1_Airports"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-  </node>
   <node componentName="tRESTRequest" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRESTRequest_1"/>
     <elementParameter field="EXTERNAL" name="OAS_IMPORT" value=""/>
@@ -176,7 +153,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="MYSQL_5"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_2"/>
     <elementParameter field="TEXT" name="HOST" show="false" value="&quot;192.168.254.181&quot;"/>
     <elementParameter field="TEXT" name="PORT" show="false" value="&quot;3306&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;AP1_AIRPORTS&quot;"/>
@@ -331,130 +308,130 @@
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
       <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="row1">
-        <nodes name="id" outgoingConnections="//@node.4/@nodeData/@connections.0" type="id_String" xpath="row1/id"/>
-        <nodes name="df" outgoingConnections="//@node.4/@nodeData/@connections.1" type="id_String" xpath="row1/df"/>
-        <nodes name="opr" outgoingConnections="//@node.4/@nodeData/@connections.2" type="id_String" xpath="row1/opr"/>
-        <nodes name="regno" outgoingConnections="//@node.4/@nodeData/@connections.3" type="id_String" xpath="row1/regno"/>
-        <nodes name="locked" outgoingConnections="//@node.4/@nodeData/@connections.4" type="id_String" xpath="row1/locked"/>
-        <nodes name="ok" outgoingConnections="//@node.4/@nodeData/@connections.5" type="id_String" xpath="row1/ok"/>
-        <nodes name="a_total" outgoingConnections="//@node.4/@nodeData/@connections.6" type="id_String" xpath="row1/a_total"/>
-        <nodes name="d_total" outgoingConnections="//@node.4/@nodeData/@connections.7" type="id_String" xpath="row1/d_total"/>
-        <nodes name="a_scope" outgoingConnections="//@node.4/@nodeData/@connections.8" type="id_String" xpath="row1/a_scope"/>
-        <nodes name="d_scope" outgoingConnections="//@node.4/@nodeData/@connections.9" type="id_String" xpath="row1/d_scope"/>
-        <nodes name="ec" outgoingConnections="//@node.4/@nodeData/@connections.10" type="id_String" xpath="row1/ec"/>
-        <nodes name="scope" outgoingConnections="//@node.4/@nodeData/@connections.11" type="id_String" xpath="row1/scope"/>
-        <nodes name="block" outgoingConnections="//@node.4/@nodeData/@connections.12" type="id_String" xpath="row1/block"/>
-        <nodes name="ad" outgoingConnections="//@node.4/@nodeData/@connections.13" type="id_String" xpath="row1/ad"/>
-        <nodes name="fromto" outgoingConnections="//@node.4/@nodeData/@connections.14" type="id_String" xpath="row1/fromto"/>
-        <nodes name="airport_code4" outgoingConnections="//@node.4/@nodeData/@connections.15" type="id_String" xpath="row1/airport_code4"/>
-        <nodes name="airport_code3" outgoingConnections="//@node.4/@nodeData/@connections.16" type="id_String" xpath="row1/airport_code3"/>
-        <nodes name="opr_code2" outgoingConnections="//@node.4/@nodeData/@connections.17" type="id_String" xpath="row1/opr_code2"/>
-        <nodes name="opr_code3" outgoingConnections="//@node.4/@nodeData/@connections.18" type="id_String" xpath="row1/opr_code3"/>
-        <nodes name="aircraft" outgoingConnections="//@node.4/@nodeData/@connections.19" type="id_String" xpath="row1/aircraft"/>
-        <nodes name="callsign2" outgoingConnections="//@node.4/@nodeData/@connections.20" type="id_String" xpath="row1/callsign2"/>
-        <nodes name="callsign3" outgoingConnections="//@node.4/@nodeData/@connections.21" type="id_String" xpath="row1/callsign3"/>
-        <nodes name="bay" outgoingConnections="//@node.4/@nodeData/@connections.22" type="id_String" xpath="row1/bay"/>
-        <nodes name="a_dlc" outgoingConnections="//@node.4/@nodeData/@connections.23" type="id_String" xpath="row1/a_dlc"/>
-        <nodes name="dtpsc" outgoingConnections="//@node.4/@nodeData/@connections.24" type="id_String" xpath="row1/dtpsc"/>
-        <nodes name="dac" outgoingConnections="//@node.4/@nodeData/@connections.25" type="id_String" xpath="row1/dac"/>
-        <nodes name="dec" outgoingConnections="//@node.4/@nodeData/@connections.26" type="id_String" xpath="row1/dec"/>
-        <nodes name="a_dmtow" outgoingConnections="//@node.4/@nodeData/@connections.27" type="id_String" xpath="row1/a_dmtow"/>
-        <nodes name="dpuw1" outgoingConnections="//@node.4/@nodeData/@connections.28" type="id_String" xpath="row1/dpuw1"/>
-        <nodes name="dauw" outgoingConnections="//@node.4/@nodeData/@connections.29" type="id_String" xpath="row1/dauw"/>
-        <nodes name="deu" outgoingConnections="//@node.4/@nodeData/@connections.30" type="id_String" xpath="row1/deu"/>
-        <nodes name="a_ilc" outgoingConnections="//@node.4/@nodeData/@connections.31" type="id_String" xpath="row1/a_ilc"/>
-        <nodes name="itpsc" outgoingConnections="//@node.4/@nodeData/@connections.32" type="id_String" xpath="row1/itpsc"/>
-        <nodes name="iac" outgoingConnections="//@node.4/@nodeData/@connections.33" type="id_String" xpath="row1/iac"/>
-        <nodes name="iec" outgoingConnections="//@node.4/@nodeData/@connections.34" type="id_String" xpath="row1/iec"/>
-        <nodes name="a_imtow" outgoingConnections="//@node.4/@nodeData/@connections.35" type="id_String" xpath="row1/a_imtow"/>
-        <nodes name="ipuw1" outgoingConnections="//@node.4/@nodeData/@connections.36" type="id_String" xpath="row1/ipuw1"/>
-        <nodes name="iauw" outgoingConnections="//@node.4/@nodeData/@connections.37" type="id_String" xpath="row1/iauw"/>
+        <nodes name="id" outgoingConnections="//@node.3/@nodeData/@connections.0" type="id_String" xpath="row1/id"/>
+        <nodes name="df" outgoingConnections="//@node.3/@nodeData/@connections.1" type="id_String" xpath="row1/df"/>
+        <nodes name="opr" outgoingConnections="//@node.3/@nodeData/@connections.2" type="id_String" xpath="row1/opr"/>
+        <nodes name="regno" outgoingConnections="//@node.3/@nodeData/@connections.3" type="id_String" xpath="row1/regno"/>
+        <nodes name="locked" outgoingConnections="//@node.3/@nodeData/@connections.4" type="id_String" xpath="row1/locked"/>
+        <nodes name="ok" outgoingConnections="//@node.3/@nodeData/@connections.5" type="id_String" xpath="row1/ok"/>
+        <nodes name="a_total" outgoingConnections="//@node.3/@nodeData/@connections.6" type="id_String" xpath="row1/a_total"/>
+        <nodes name="d_total" outgoingConnections="//@node.3/@nodeData/@connections.7" type="id_String" xpath="row1/d_total"/>
+        <nodes name="a_scope" outgoingConnections="//@node.3/@nodeData/@connections.8" type="id_String" xpath="row1/a_scope"/>
+        <nodes name="d_scope" outgoingConnections="//@node.3/@nodeData/@connections.9" type="id_String" xpath="row1/d_scope"/>
+        <nodes name="ec" outgoingConnections="//@node.3/@nodeData/@connections.10" type="id_String" xpath="row1/ec"/>
+        <nodes name="scope" outgoingConnections="//@node.3/@nodeData/@connections.11" type="id_String" xpath="row1/scope"/>
+        <nodes name="block" outgoingConnections="//@node.3/@nodeData/@connections.12" type="id_String" xpath="row1/block"/>
+        <nodes name="ad" outgoingConnections="//@node.3/@nodeData/@connections.13" type="id_String" xpath="row1/ad"/>
+        <nodes name="fromto" outgoingConnections="//@node.3/@nodeData/@connections.14" type="id_String" xpath="row1/fromto"/>
+        <nodes name="airport_code4" outgoingConnections="//@node.3/@nodeData/@connections.15" type="id_String" xpath="row1/airport_code4"/>
+        <nodes name="airport_code3" outgoingConnections="//@node.3/@nodeData/@connections.16" type="id_String" xpath="row1/airport_code3"/>
+        <nodes name="opr_code2" outgoingConnections="//@node.3/@nodeData/@connections.17" type="id_String" xpath="row1/opr_code2"/>
+        <nodes name="opr_code3" outgoingConnections="//@node.3/@nodeData/@connections.18" type="id_String" xpath="row1/opr_code3"/>
+        <nodes name="aircraft" outgoingConnections="//@node.3/@nodeData/@connections.19" type="id_String" xpath="row1/aircraft"/>
+        <nodes name="callsign2" outgoingConnections="//@node.3/@nodeData/@connections.20" type="id_String" xpath="row1/callsign2"/>
+        <nodes name="callsign3" outgoingConnections="//@node.3/@nodeData/@connections.21" type="id_String" xpath="row1/callsign3"/>
+        <nodes name="bay" outgoingConnections="//@node.3/@nodeData/@connections.22" type="id_String" xpath="row1/bay"/>
+        <nodes name="a_dlc" outgoingConnections="//@node.3/@nodeData/@connections.23" type="id_String" xpath="row1/a_dlc"/>
+        <nodes name="dtpsc" outgoingConnections="//@node.3/@nodeData/@connections.24" type="id_String" xpath="row1/dtpsc"/>
+        <nodes name="dac" outgoingConnections="//@node.3/@nodeData/@connections.25" type="id_String" xpath="row1/dac"/>
+        <nodes name="dec" outgoingConnections="//@node.3/@nodeData/@connections.26" type="id_String" xpath="row1/dec"/>
+        <nodes name="a_dmtow" outgoingConnections="//@node.3/@nodeData/@connections.27" type="id_String" xpath="row1/a_dmtow"/>
+        <nodes name="dpuw1" outgoingConnections="//@node.3/@nodeData/@connections.28" type="id_String" xpath="row1/dpuw1"/>
+        <nodes name="dauw" outgoingConnections="//@node.3/@nodeData/@connections.29" type="id_String" xpath="row1/dauw"/>
+        <nodes name="deu" outgoingConnections="//@node.3/@nodeData/@connections.30" type="id_String" xpath="row1/deu"/>
+        <nodes name="a_ilc" outgoingConnections="//@node.3/@nodeData/@connections.31" type="id_String" xpath="row1/a_ilc"/>
+        <nodes name="itpsc" outgoingConnections="//@node.3/@nodeData/@connections.32" type="id_String" xpath="row1/itpsc"/>
+        <nodes name="iac" outgoingConnections="//@node.3/@nodeData/@connections.33" type="id_String" xpath="row1/iac"/>
+        <nodes name="iec" outgoingConnections="//@node.3/@nodeData/@connections.34" type="id_String" xpath="row1/iec"/>
+        <nodes name="a_imtow" outgoingConnections="//@node.3/@nodeData/@connections.35" type="id_String" xpath="row1/a_imtow"/>
+        <nodes name="ipuw1" outgoingConnections="//@node.3/@nodeData/@connections.36" type="id_String" xpath="row1/ipuw1"/>
+        <nodes name="iauw" outgoingConnections="//@node.3/@nodeData/@connections.37" type="id_String" xpath="row1/iauw"/>
       </inputTrees>
       <outputTrees allInOne="true" name="out">
         <nodes expression="" name="body" type="id_Document" xpath="out/body">
           <children expression="" main="true" name="flightschedules" type="id_String" xpath="out.body:/flightschedules" xsi:type="TalendXMLMap:OutputTreeNode">
             <children expression="" loop="true" main="true" name="flightschedule" type="id_String" xpath="out.body:/flightschedules/flightschedule" xsi:type="TalendXMLMap:OutputTreeNode">
-              <children expression="row1.id" incomingConnections="//@node.4/@nodeData/@connections.0" name="id" type="id_String" xpath="out.body:/flightschedules/flightschedule/id" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="row1.df" incomingConnections="//@node.4/@nodeData/@connections.1" name="df" type="id_String" xpath="out.body:/flightschedules/flightschedule/df" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="row1.opr" incomingConnections="//@node.4/@nodeData/@connections.2" name="opr" type="id_String" xpath="out.body:/flightschedules/flightschedule/opr" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="row1.regno" incomingConnections="//@node.4/@nodeData/@connections.3" name="regno" type="id_String" xpath="out.body:/flightschedules/flightschedule/regno" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="row1.locked" incomingConnections="//@node.4/@nodeData/@connections.4" name="locked" type="id_String" xpath="out.body:/flightschedules/flightschedule/locked" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="row1.ok" incomingConnections="//@node.4/@nodeData/@connections.5" name="ok" type="id_String" xpath="out.body:/flightschedules/flightschedule/ok" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="row1.a_total" incomingConnections="//@node.4/@nodeData/@connections.6" name="a_total" type="id_String" xpath="out.body:/flightschedules/flightschedule/a_total" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="row1.d_total" incomingConnections="//@node.4/@nodeData/@connections.7" name="d_total" type="id_String" xpath="out.body:/flightschedules/flightschedule/d_total" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="row1.a_scope" incomingConnections="//@node.4/@nodeData/@connections.8" name="a_scope" type="id_String" xpath="out.body:/flightschedules/flightschedule/a_scope" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="row1.d_scope" incomingConnections="//@node.4/@nodeData/@connections.9" name="d_scope" type="id_String" xpath="out.body:/flightschedules/flightschedule/d_scope" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="row1.ec" incomingConnections="//@node.4/@nodeData/@connections.10" name="ec" type="id_String" xpath="out.body:/flightschedules/flightschedule/ec" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="row1.scope" incomingConnections="//@node.4/@nodeData/@connections.11" name="scope" type="id_String" xpath="out.body:/flightschedules/flightschedule/scope" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="row1.block" incomingConnections="//@node.4/@nodeData/@connections.12" name="block" type="id_String" xpath="out.body:/flightschedules/flightschedule/block" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="row1.ad" incomingConnections="//@node.4/@nodeData/@connections.13" name="ad" type="id_String" xpath="out.body:/flightschedules/flightschedule/ad" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="row1.fromto" incomingConnections="//@node.4/@nodeData/@connections.14" name="fromto" type="id_String" xpath="out.body:/flightschedules/flightschedule/fromto" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="row1.airport_code4" incomingConnections="//@node.4/@nodeData/@connections.15" name="airport_code4" type="id_String" xpath="out.body:/flightschedules/flightschedule/airport_code4" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="row1.airport_code3" incomingConnections="//@node.4/@nodeData/@connections.16" name="airport_code3" type="id_String" xpath="out.body:/flightschedules/flightschedule/airport_code3" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="row1.opr_code2" incomingConnections="//@node.4/@nodeData/@connections.17" name="opr_code2" type="id_String" xpath="out.body:/flightschedules/flightschedule/opr_code2" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="row1.opr_code3" incomingConnections="//@node.4/@nodeData/@connections.18" name="opr_code3" type="id_String" xpath="out.body:/flightschedules/flightschedule/opr_code3" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="row1.aircraft" incomingConnections="//@node.4/@nodeData/@connections.19" name="aircraft" type="id_String" xpath="out.body:/flightschedules/flightschedule/aircraft" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="row1.callsign2" incomingConnections="//@node.4/@nodeData/@connections.20" name="callsign2" type="id_String" xpath="out.body:/flightschedules/flightschedule/callsign2" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="row1.callsign3" incomingConnections="//@node.4/@nodeData/@connections.21" name="callsign3" type="id_String" xpath="out.body:/flightschedules/flightschedule/callsign3" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="row1.bay" incomingConnections="//@node.4/@nodeData/@connections.22" name="bay" type="id_String" xpath="out.body:/flightschedules/flightschedule/bay" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="row1.a_dlc" incomingConnections="//@node.4/@nodeData/@connections.23" name="a_dlc" type="id_String" xpath="out.body:/flightschedules/flightschedule/a_dlc" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="row1.dtpsc" incomingConnections="//@node.4/@nodeData/@connections.24" name="dtpsc" type="id_String" xpath="out.body:/flightschedules/flightschedule/dtpsc" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="row1.dac" incomingConnections="//@node.4/@nodeData/@connections.25" name="dac" type="id_String" xpath="out.body:/flightschedules/flightschedule/dac" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="row1.dec" incomingConnections="//@node.4/@nodeData/@connections.26" name="dec" type="id_String" xpath="out.body:/flightschedules/flightschedule/dec" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="row1.a_dmtow" incomingConnections="//@node.4/@nodeData/@connections.27" name="a_dmtow" type="id_String" xpath="out.body:/flightschedules/flightschedule/a_dmtow" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="row1.dpuw1" incomingConnections="//@node.4/@nodeData/@connections.28" name="dpuw1" type="id_String" xpath="out.body:/flightschedules/flightschedule/dpuw1" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="row1.dauw" incomingConnections="//@node.4/@nodeData/@connections.29" name="dauw" type="id_String" xpath="out.body:/flightschedules/flightschedule/dauw" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="row1.deu" incomingConnections="//@node.4/@nodeData/@connections.30" name="deu" type="id_String" xpath="out.body:/flightschedules/flightschedule/deu" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="row1.a_ilc" incomingConnections="//@node.4/@nodeData/@connections.31" name="a_ilc" type="id_String" xpath="out.body:/flightschedules/flightschedule/a_ilc" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="row1.itpsc" incomingConnections="//@node.4/@nodeData/@connections.32" name="itpsc" type="id_String" xpath="out.body:/flightschedules/flightschedule/itpsc" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="row1.iac" incomingConnections="//@node.4/@nodeData/@connections.33" name="iac" type="id_String" xpath="out.body:/flightschedules/flightschedule/iac" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="row1.iec" incomingConnections="//@node.4/@nodeData/@connections.34" name="iec" type="id_String" xpath="out.body:/flightschedules/flightschedule/iec" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="row1.a_imtow" incomingConnections="//@node.4/@nodeData/@connections.35" name="a_imtow" type="id_String" xpath="out.body:/flightschedules/flightschedule/a_imtow" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="row1.ipuw1" incomingConnections="//@node.4/@nodeData/@connections.36" name="ipuw1" type="id_String" xpath="out.body:/flightschedules/flightschedule/ipuw1" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="row1.iauw" incomingConnections="//@node.4/@nodeData/@connections.37" name="iauw" type="id_String" xpath="out.body:/flightschedules/flightschedule/iauw" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.id" incomingConnections="//@node.3/@nodeData/@connections.0" name="id" type="id_String" xpath="out.body:/flightschedules/flightschedule/id" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.df" incomingConnections="//@node.3/@nodeData/@connections.1" name="df" type="id_String" xpath="out.body:/flightschedules/flightschedule/df" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.opr" incomingConnections="//@node.3/@nodeData/@connections.2" name="opr" type="id_String" xpath="out.body:/flightschedules/flightschedule/opr" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.regno" incomingConnections="//@node.3/@nodeData/@connections.3" name="regno" type="id_String" xpath="out.body:/flightschedules/flightschedule/regno" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.locked" incomingConnections="//@node.3/@nodeData/@connections.4" name="locked" type="id_String" xpath="out.body:/flightschedules/flightschedule/locked" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.ok" incomingConnections="//@node.3/@nodeData/@connections.5" name="ok" type="id_String" xpath="out.body:/flightschedules/flightschedule/ok" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.a_total" incomingConnections="//@node.3/@nodeData/@connections.6" name="a_total" type="id_String" xpath="out.body:/flightschedules/flightschedule/a_total" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.d_total" incomingConnections="//@node.3/@nodeData/@connections.7" name="d_total" type="id_String" xpath="out.body:/flightschedules/flightschedule/d_total" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.a_scope" incomingConnections="//@node.3/@nodeData/@connections.8" name="a_scope" type="id_String" xpath="out.body:/flightschedules/flightschedule/a_scope" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.d_scope" incomingConnections="//@node.3/@nodeData/@connections.9" name="d_scope" type="id_String" xpath="out.body:/flightschedules/flightschedule/d_scope" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.ec" incomingConnections="//@node.3/@nodeData/@connections.10" name="ec" type="id_String" xpath="out.body:/flightschedules/flightschedule/ec" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.scope" incomingConnections="//@node.3/@nodeData/@connections.11" name="scope" type="id_String" xpath="out.body:/flightschedules/flightschedule/scope" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.block" incomingConnections="//@node.3/@nodeData/@connections.12" name="block" type="id_String" xpath="out.body:/flightschedules/flightschedule/block" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.ad" incomingConnections="//@node.3/@nodeData/@connections.13" name="ad" type="id_String" xpath="out.body:/flightschedules/flightschedule/ad" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.fromto" incomingConnections="//@node.3/@nodeData/@connections.14" name="fromto" type="id_String" xpath="out.body:/flightschedules/flightschedule/fromto" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.airport_code4" incomingConnections="//@node.3/@nodeData/@connections.15" name="airport_code4" type="id_String" xpath="out.body:/flightschedules/flightschedule/airport_code4" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.airport_code3" incomingConnections="//@node.3/@nodeData/@connections.16" name="airport_code3" type="id_String" xpath="out.body:/flightschedules/flightschedule/airport_code3" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.opr_code2" incomingConnections="//@node.3/@nodeData/@connections.17" name="opr_code2" type="id_String" xpath="out.body:/flightschedules/flightschedule/opr_code2" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.opr_code3" incomingConnections="//@node.3/@nodeData/@connections.18" name="opr_code3" type="id_String" xpath="out.body:/flightschedules/flightschedule/opr_code3" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.aircraft" incomingConnections="//@node.3/@nodeData/@connections.19" name="aircraft" type="id_String" xpath="out.body:/flightschedules/flightschedule/aircraft" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.callsign2" incomingConnections="//@node.3/@nodeData/@connections.20" name="callsign2" type="id_String" xpath="out.body:/flightschedules/flightschedule/callsign2" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.callsign3" incomingConnections="//@node.3/@nodeData/@connections.21" name="callsign3" type="id_String" xpath="out.body:/flightschedules/flightschedule/callsign3" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.bay" incomingConnections="//@node.3/@nodeData/@connections.22" name="bay" type="id_String" xpath="out.body:/flightschedules/flightschedule/bay" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.a_dlc" incomingConnections="//@node.3/@nodeData/@connections.23" name="a_dlc" type="id_String" xpath="out.body:/flightschedules/flightschedule/a_dlc" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.dtpsc" incomingConnections="//@node.3/@nodeData/@connections.24" name="dtpsc" type="id_String" xpath="out.body:/flightschedules/flightschedule/dtpsc" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.dac" incomingConnections="//@node.3/@nodeData/@connections.25" name="dac" type="id_String" xpath="out.body:/flightschedules/flightschedule/dac" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.dec" incomingConnections="//@node.3/@nodeData/@connections.26" name="dec" type="id_String" xpath="out.body:/flightschedules/flightschedule/dec" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.a_dmtow" incomingConnections="//@node.3/@nodeData/@connections.27" name="a_dmtow" type="id_String" xpath="out.body:/flightschedules/flightschedule/a_dmtow" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.dpuw1" incomingConnections="//@node.3/@nodeData/@connections.28" name="dpuw1" type="id_String" xpath="out.body:/flightschedules/flightschedule/dpuw1" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.dauw" incomingConnections="//@node.3/@nodeData/@connections.29" name="dauw" type="id_String" xpath="out.body:/flightschedules/flightschedule/dauw" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.deu" incomingConnections="//@node.3/@nodeData/@connections.30" name="deu" type="id_String" xpath="out.body:/flightschedules/flightschedule/deu" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.a_ilc" incomingConnections="//@node.3/@nodeData/@connections.31" name="a_ilc" type="id_String" xpath="out.body:/flightschedules/flightschedule/a_ilc" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.itpsc" incomingConnections="//@node.3/@nodeData/@connections.32" name="itpsc" type="id_String" xpath="out.body:/flightschedules/flightschedule/itpsc" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.iac" incomingConnections="//@node.3/@nodeData/@connections.33" name="iac" type="id_String" xpath="out.body:/flightschedules/flightschedule/iac" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.iec" incomingConnections="//@node.3/@nodeData/@connections.34" name="iec" type="id_String" xpath="out.body:/flightschedules/flightschedule/iec" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.a_imtow" incomingConnections="//@node.3/@nodeData/@connections.35" name="a_imtow" type="id_String" xpath="out.body:/flightschedules/flightschedule/a_imtow" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.ipuw1" incomingConnections="//@node.3/@nodeData/@connections.36" name="ipuw1" type="id_String" xpath="out.body:/flightschedules/flightschedule/ipuw1" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.iauw" incomingConnections="//@node.3/@nodeData/@connections.37" name="iauw" type="id_String" xpath="out.body:/flightschedules/flightschedule/iauw" xsi:type="TalendXMLMap:OutputTreeNode"/>
             </children>
           </children>
         </nodes>
       </outputTrees>
       <varTables minimized="true" name="Var"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.0" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.0" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.1" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.1" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.2" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.2" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.3" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.3" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.4" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.4" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.5" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.5" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.6" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.6" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.7" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.7" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.8" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.8" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.9" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.9" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.10" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.10" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.11" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.11" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.12" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.12" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.13" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.13" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.14" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.14" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.15" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.15" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.16" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.16" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.17" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.17" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.18" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.18" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.19" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.19" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.20" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.20" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.21" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.21" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.22" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.22" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.23" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.23" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.24" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.24" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.25" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.25" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.26" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.26" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.27" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.27" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.28" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.28" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.29" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.29" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.30" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.30" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.31" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.31" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.32" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.32" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.33" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.33" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.34" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.34" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.35" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.35" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.36" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.36" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.37" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.37" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.0" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.1" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.2" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.2" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.3" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.3" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.4" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.4" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.5" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.5" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.6" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.6" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.7" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.7" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.8" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.8" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.9" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.9" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.10" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.10" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.11" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.11" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.12" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.12" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.13" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.13" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.14" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.14" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.15" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.15" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.16" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.16" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.17" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.17" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.18" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.18" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.19" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.19" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.20" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.20" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.21" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.21" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.22" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.22" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.23" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.23" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.24" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.24" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.25" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.25" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.26" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.26" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.27" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.27" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.28" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.28" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.29" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.29" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.30" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.30" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.31" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.31" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.32" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.32" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.33" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.33" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.34" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.34" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.35" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.35" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.36" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.36" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.37" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.37" xsi:type="TalendXMLMap:Connection"/>
     </nodeData>
   </node>
   <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="736" posY="160">
@@ -561,6 +538,29 @@
     <metadata connector="FLOW" name="tRESTResponse_2">
       <column defaultValue="" key="false" length="0" name="body" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
+  </node>
+  <node componentName="tMysqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_2"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_iB1aAKawEei2LLUT3N3rjQ"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;192.168.254.181&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;ap1_hq&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="p2FjNM2tw0r42mOnXDtqvA=="/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="AP1_HQ"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
   <connection connectorName="FLOW" label="getBPAirportDetails" lineStyle="0" metaname="getBPAirportDetails" offsetLabelX="0" offsetLabelY="0" source="tRESTRequest_1" target="tFlowToIterate_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -758,11 +758,6 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row9"/>
   </connection>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_1"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRESTRequest_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
@@ -772,13 +767,18 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_320500b8-e73f-4f78-9246-eae8f1995657"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>g1AWwW1dWQqXIG0wRvgyuRIIytwKBFHvy3VHdGG/zFQ8GbCiNE6Eh7+zWm1vLJecDwp6lmi5Mrm9
-2HfPTOVWBQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_295528ab-f8f8-4f74-9dac-ddcc7abcfdfe"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>aJuewm2qKJ0Q/3mw4d3CX+K7+cVbAMWDuNvMRvDNxaX5kgQW1nULEjkmVLvipZAantbdi5UK5YLu
-xpDRw+7hgg==</DigestValue></Reference></SignedInfo><SignatureValue>zb3gYotsqse826nvKGD9kONc+lYW9W9Yl92REHbaLXUks6DXcHWbud6Sn0+j5qBIiOJpDifIDwrc
-k8t4upHmIwAK1+D0ju83YrY4c020dOsx6P7l5Nfy7aqzC27Zv0SanV+e0vXBwxVNrGJ5SQrWiNTO
-MyD8tN7NGfKF4UVwGFWksJOHjaNPOlSnutcL/T81YB+HcVWhjHo+8NE2WCNKqcwUkYjrjd4pqVuB
-TNfmssxQA4ojIIiC/afLOvTMX+4uQ9xUNy6yLRcDqkbtEJ+hG/rHf2LS728WRhBcCESAEOZKdveb
-YRB4EiQuHfS5+fi8S2Y7UGJojxcT0g5ePnZ+kA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_5f70118b-b464-46d5-ac2a-1bd57cb5c3b8"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>WRqJY1lFeQXSFLGItXnbjeVwAJh+yyc5UO8D7CEcbT25Wb77tWQq5jC5OFla9qe5tXa5Op7aXR0X
+eSH4+N7Xbw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b41c4c9b-a8e3-4a3b-b10d-c3c6fff83fb8"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>TAYsVprdpsWwQGE01Nfn3AQNGkxso6QNHJV7uR6NUq3lRUGaTrO6DAQmzDGIS4KHYH4IYnYJqZjZ
+SdVyHJuTJA==</DigestValue></Reference></SignedInfo><SignatureValue>m4y9muRdKcvEZSGpB/NzAXB91HIT2NRzftpx+a/JxQ5pmxY0GiQ5Fd5ZwDKncgweyubxMINM3s2F
+mX8PH/iIdoHTWtO5opckOVhnhlawgQFMoiRH88IpNaR5TjrKfBRD8INt5Me7ZEbAVbCgAceHiHht
+Ric75U+5pBUnC+GmzTssFQSDtRRzu6+8ZcGGeesAEbf8k6wa8TKhPheihN2K6t6FaF573suMBAZk
+sFJrTlBBUa46/2C7exmi6gDpP4x1PQ6BvTP+LOO0I9s9hnlGr5UwKc4M0k8Nahzc8JLppeFVNQT+
+KD0c5cz+IoO5TPc2ptdiim0yoUtCVZNq8tqdLw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -802,4 +802,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_295528ab-f8f8-4f74-9dac-ddcc7abcfdfe" Target="#_320500b8-e73f-4f78-9246-eae8f1995657"><Timestamp>2018-08-24 14:00:24</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b41c4c9b-a8e3-4a3b-b10d-c3c6fff83fb8" Target="#_5f70118b-b464-46d5-ac2a-1bd57cb5c3b8"><Timestamp>2018-08-24 14:00:57</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
