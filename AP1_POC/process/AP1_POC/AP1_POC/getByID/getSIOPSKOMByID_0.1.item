@@ -1,6 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:version="2.0">
-  <context confirmationNeeded="false" name="Default"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="id" prompt="id?" promptNeeded="false" type="id_String" value=""/>
+  </context>
   <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
@@ -104,13 +108,629 @@
     <routinesParameter id="_BpGMkKRJEei2LLUT3N3rjQ" name="TalendStringUtil"/>
     <routinesParameter id="_BnJr0KRJEei2LLUT3N3rjQ" name="TalendString"/>
   </parameters>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b78a7951-6851-474c-b1b8-404a1c141ce3"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>df9HQj7FaGogCtdJj/Jm3F0JYveBXIF0caWaoWa38jhoJ5xBJ4ib7qFWHHiLTVjHlon7dIZ1zJ4Z
-jarbNjkXDA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_37e420a9-9b62-484d-bc4e-d907528769a4"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>g9ndDjRJM9UodfQmfD6jgeumxhUR/D5yVvTfBuXU4QgR2/ob124DlSVl+J5FCbApDgo7kJ8GFnWA
-ks4NxrK5IQ==</DigestValue></Reference></SignedInfo><SignatureValue>X8SIC84qv5hIa8Bsv4GNFhI8I07Igwhh4VwgqoinLJWeLvQFNHtafRiBI7gYCNP3cU63/uLKfgeh
-hl1qmTBZzAv503+mhI914spWrNUvIRjgsOSR6pOfqhOZRf5r9OmZaFCQtXTEB1JSO093l512kIa2
-r6z2gyfpziQqkWcWGSVzWekOnOVXvdRN+n2FHU6TwgyPUe1BEk18iyKO5+Mcir3As/xcH+yb9tt5
-ekYIngEZwoLZz0NAb0Y8psTD48E0NQvMb1NQ7nT3jzlLP479Kor6y1443KdJVEzc8LzZnGevHkq5
-FKagkESuctAR4DgXFth5TAt/AdOLZeKfNaXWAQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+  <node componentName="tRESTRequest" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="32" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRESTRequest_1"/>
+    <elementParameter field="EXTERNAL" name="OAS_IMPORT" value=""/>
+    <elementParameter field="TEXT" name="REST_ENDPOINT" value="&quot;http://localhost:8091/getSiopskmByID&quot;"/>
+    <elementParameter field="TABLE" name="SCHEMAS">
+      <elementValue elementRef="SCHEMA" value="getFIDSDetails"/>
+      <elementValue elementRef="HTTP_VERB" value="POST"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/&quot;"/>
+      <elementValue elementRef="CONSUMES" value="JSON"/>
+      <elementValue elementRef="PRODUCES" value="JSON"/>
+      <elementValue elementRef="STREAMING" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
+    <elementParameter field="TEXT" name="SERVICE_NAMESPACE" show="false" value="&quot;http://www.talend.org/rest/&quot;"/>
+    <elementParameter field="TEXT" name="SERVICE_NAME" show="false" value="&quot;getSIOPSKOMByID&quot;"/>
+    <elementParameter field="CHECK" name="SERVICE_ACTIVITY_MONITOR" value="false"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" show="false" value="BASIC"/>
+    <elementParameter field="CHECK" name="NEED_AUTHORIZATION" show="false" value="false"/>
+    <elementParameter field="CHECK" name="USE_BUSINESS_CORRELATION" value="false"/>
+    <elementParameter field="CHECK" name="LOG_MESSAGES" value="false"/>
+    <elementParameter field="CHECK" name="WRAP_JSON_REQUEST" value="false"/>
+    <elementParameter field="TABLE" name="SERVICE_LOCATOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="TABLE" name="SERVICE_ACTIVITY_MONITOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="CHECK" name="CONVERT_JSON_VALUES_TO_STRING" value="false"/>
+    <elementParameter field="CHECK" name="EXPOSE_SWAGGER_SPEC" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDE_DOC_INTO_SWAGGER_SPEC" show="false" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="WRONG_CALLS" name="WRONG_CALLS">
+      <column defaultValue="" key="false" length="255" name="uri" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="method" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="status" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="1024" name="error" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" label="getFIDSDetails" name="getFIDSDetails">
+      <column comment="" key="false" length="-1" name="body" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tExtractJSONFields" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tExtractJSONFields_1"/>
+    <elementParameter field="CLOSED_LIST" name="READ_BY" value="XPATH"/>
+    <elementParameter field="CLOSED_LIST" name="JSON_PATH_VERSION" show="false" value="2_1_0"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="JSONFIELD" value="body"/>
+    <elementParameter field="TEXT" name="LOOP_QUERY" value="&quot;/&quot;"/>
+    <elementParameter field="TEXT" name="JSON_LOOP_QUERY" show="false" value="&quot;*&quot;"/>
+    <elementParameter field="TABLE" name="MAPPING">
+      <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
+      <elementValue elementRef="QUERY" value="&quot;id&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="MAPPING_4_JSONPATH" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
+      <elementValue elementRef="QUERY" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="DESTINATION" show="false" value="tExtractJSONFields_1"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CHECK" name="SPLIT_LIST" show="false" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="req" name="tExtractJSONFields_1">
+      <column comment="" key="false" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="req" name="REJECT">
+      <column comment="" key="false" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorJSONField" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="352" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_X8hg0KcGEeifWcVJ5FIw2A-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="output" name="output">
+      <column comment="" key="false" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="output" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row2.id " name="id" nullable="true" type="id_String"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row2" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="id" nullable="true" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_1"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="// code sample:&#13;&#10;//&#13;&#10;// multiply by 2 the row identifier&#13;&#10;// output_row.id = input_row.id * 2;&#13;&#10;//&#13;&#10;// lowercase the name&#13;&#10;context.id = input_row.id;&#13;&#10;&#13;&#10;&#13;&#10;System.out.println(&quot;context.id&quot;+context.id);&#13;&#10;&#13;&#10;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJavaRow_1"/>
+  </node>
+  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMysqlInput_1"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;ap1_hq&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MySQL"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="pphwy87hqwU="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;siopskom&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select  *  from siopskom where id = '&quot;+context.id+&quot;' &quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ENABLE_STREAM" value="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="df"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="opr"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="regno"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="locked"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ok"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="a_total"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="d_total"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="a_scope"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="d_scope"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ec"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="scope"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="block"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ad"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="fromto"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="airport_code4"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="airport_code3"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="opr_code2"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="opr_code3"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="aircraft"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="callsign2"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="callsign3"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="bay"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="a_dlc"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dtpsc"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dac"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dec"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="a_dmtow"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dpuw1"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dauw"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="deu"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="a_ilc"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="itpsc"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="iac"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="iec"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="a_imtow"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ipuw1"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="iauw"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMysqlInput_1">
+      <column comment="" key="false" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="df" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="opr" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="regno" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="locked" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ok" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="a_total" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="d_total" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="a_scope" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="d_scope" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ec" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="scope" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="block" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ad" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="fromto" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="airport_code4" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="airport_code3" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="opr_code2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="opr_code3" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="aircraft" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="callsign2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="callsign3" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="bay" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="a_dlc" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="dtpsc" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="dac" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="dec" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="a_dmtow" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="dpuw1" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="dauw" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="deu" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="a_ilc" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="itpsc" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="iac" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="iec" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="a_imtow" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ipuw1" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="iauw" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="800" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tXMLMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="out">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="string" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="row1">
+        <nodes name="id" outgoingConnections="//@node.5/@nodeData/@connections.0" type="id_String" xpath="row1/id"/>
+        <nodes name="df" outgoingConnections="//@node.5/@nodeData/@connections.1" type="id_String" xpath="row1/df"/>
+        <nodes name="opr" outgoingConnections="//@node.5/@nodeData/@connections.2" type="id_String" xpath="row1/opr"/>
+        <nodes name="regno" outgoingConnections="//@node.5/@nodeData/@connections.3" type="id_String" xpath="row1/regno"/>
+        <nodes name="locked" outgoingConnections="//@node.5/@nodeData/@connections.4" type="id_String" xpath="row1/locked"/>
+        <nodes name="ok" outgoingConnections="//@node.5/@nodeData/@connections.5" type="id_String" xpath="row1/ok"/>
+        <nodes name="a_total" outgoingConnections="//@node.5/@nodeData/@connections.6" type="id_String" xpath="row1/a_total"/>
+        <nodes name="d_total" outgoingConnections="//@node.5/@nodeData/@connections.7" type="id_String" xpath="row1/d_total"/>
+        <nodes name="a_scope" outgoingConnections="//@node.5/@nodeData/@connections.8" type="id_String" xpath="row1/a_scope"/>
+        <nodes name="d_scope" outgoingConnections="//@node.5/@nodeData/@connections.9" type="id_String" xpath="row1/d_scope"/>
+        <nodes name="ec" outgoingConnections="//@node.5/@nodeData/@connections.10" type="id_String" xpath="row1/ec"/>
+        <nodes name="scope" outgoingConnections="//@node.5/@nodeData/@connections.11" type="id_String" xpath="row1/scope"/>
+        <nodes name="block" outgoingConnections="//@node.5/@nodeData/@connections.12" type="id_String" xpath="row1/block"/>
+        <nodes name="ad" outgoingConnections="//@node.5/@nodeData/@connections.13" type="id_String" xpath="row1/ad"/>
+        <nodes name="fromto" outgoingConnections="//@node.5/@nodeData/@connections.14" type="id_String" xpath="row1/fromto"/>
+        <nodes name="airport_code4" outgoingConnections="//@node.5/@nodeData/@connections.15" type="id_String" xpath="row1/airport_code4"/>
+        <nodes name="airport_code3" outgoingConnections="//@node.5/@nodeData/@connections.16" type="id_String" xpath="row1/airport_code3"/>
+        <nodes name="opr_code2" outgoingConnections="//@node.5/@nodeData/@connections.17" type="id_String" xpath="row1/opr_code2"/>
+        <nodes name="opr_code3" outgoingConnections="//@node.5/@nodeData/@connections.18" type="id_String" xpath="row1/opr_code3"/>
+        <nodes name="aircraft" outgoingConnections="//@node.5/@nodeData/@connections.19" type="id_String" xpath="row1/aircraft"/>
+        <nodes name="callsign2" outgoingConnections="//@node.5/@nodeData/@connections.20" type="id_String" xpath="row1/callsign2"/>
+        <nodes name="callsign3" outgoingConnections="//@node.5/@nodeData/@connections.21" type="id_String" xpath="row1/callsign3"/>
+        <nodes name="bay" outgoingConnections="//@node.5/@nodeData/@connections.22" type="id_String" xpath="row1/bay"/>
+        <nodes name="a_dlc" outgoingConnections="//@node.5/@nodeData/@connections.23" type="id_String" xpath="row1/a_dlc"/>
+        <nodes name="dtpsc" outgoingConnections="//@node.5/@nodeData/@connections.24" type="id_String" xpath="row1/dtpsc"/>
+        <nodes name="dac" outgoingConnections="//@node.5/@nodeData/@connections.25" type="id_String" xpath="row1/dac"/>
+        <nodes name="dec" outgoingConnections="//@node.5/@nodeData/@connections.26" type="id_String" xpath="row1/dec"/>
+        <nodes name="a_dmtow" outgoingConnections="//@node.5/@nodeData/@connections.27" type="id_String" xpath="row1/a_dmtow"/>
+        <nodes name="dpuw1" outgoingConnections="//@node.5/@nodeData/@connections.28" type="id_String" xpath="row1/dpuw1"/>
+        <nodes name="dauw" outgoingConnections="//@node.5/@nodeData/@connections.29" type="id_String" xpath="row1/dauw"/>
+        <nodes name="deu" outgoingConnections="//@node.5/@nodeData/@connections.30" type="id_String" xpath="row1/deu"/>
+        <nodes name="a_ilc" outgoingConnections="//@node.5/@nodeData/@connections.31" type="id_String" xpath="row1/a_ilc"/>
+        <nodes name="itpsc" outgoingConnections="//@node.5/@nodeData/@connections.32" type="id_String" xpath="row1/itpsc"/>
+        <nodes name="iac" outgoingConnections="//@node.5/@nodeData/@connections.33" type="id_String" xpath="row1/iac"/>
+        <nodes name="iec" outgoingConnections="//@node.5/@nodeData/@connections.34" type="id_String" xpath="row1/iec"/>
+        <nodes name="a_imtow" outgoingConnections="//@node.5/@nodeData/@connections.35" type="id_String" xpath="row1/a_imtow"/>
+        <nodes name="ipuw1" outgoingConnections="//@node.5/@nodeData/@connections.36" type="id_String" xpath="row1/ipuw1"/>
+        <nodes name="iauw" outgoingConnections="//@node.5/@nodeData/@connections.37" type="id_String" xpath="row1/iauw"/>
+      </inputTrees>
+      <outputTrees allInOne="true" name="out">
+        <nodes expression="" name="body" type="id_Document" xpath="out/body">
+          <children expression="" main="true" name="flightschedules" type="id_String" xpath="out.body:/flightschedules" xsi:type="TalendXMLMap:OutputTreeNode">
+            <children expression="" loop="true" main="true" name="flightschedule" type="id_String" xpath="out.body:/flightschedules/flightschedule" xsi:type="TalendXMLMap:OutputTreeNode">
+              <children expression="row1.id" incomingConnections="//@node.5/@nodeData/@connections.0" name="id" type="id_String" xpath="out.body:/flightschedules/flightschedule/id" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.df" incomingConnections="//@node.5/@nodeData/@connections.1" name="df" type="id_String" xpath="out.body:/flightschedules/flightschedule/df" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.opr" incomingConnections="//@node.5/@nodeData/@connections.2" name="opr" type="id_String" xpath="out.body:/flightschedules/flightschedule/opr" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.regno" incomingConnections="//@node.5/@nodeData/@connections.3" name="regno" type="id_String" xpath="out.body:/flightschedules/flightschedule/regno" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.locked" incomingConnections="//@node.5/@nodeData/@connections.4" name="locked" type="id_String" xpath="out.body:/flightschedules/flightschedule/locked" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.ok" incomingConnections="//@node.5/@nodeData/@connections.5" name="ok" type="id_String" xpath="out.body:/flightschedules/flightschedule/ok" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.a_total" incomingConnections="//@node.5/@nodeData/@connections.6" name="a_total" type="id_String" xpath="out.body:/flightschedules/flightschedule/a_total" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.d_total" incomingConnections="//@node.5/@nodeData/@connections.7" name="d_total" type="id_String" xpath="out.body:/flightschedules/flightschedule/d_total" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.a_scope" incomingConnections="//@node.5/@nodeData/@connections.8" name="a_scope" type="id_String" xpath="out.body:/flightschedules/flightschedule/a_scope" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.d_scope" incomingConnections="//@node.5/@nodeData/@connections.9" name="d_scope" type="id_String" xpath="out.body:/flightschedules/flightschedule/d_scope" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.ec" incomingConnections="//@node.5/@nodeData/@connections.10" name="ec" type="id_String" xpath="out.body:/flightschedules/flightschedule/ec" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.scope" incomingConnections="//@node.5/@nodeData/@connections.11" name="scope" type="id_String" xpath="out.body:/flightschedules/flightschedule/scope" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.block" incomingConnections="//@node.5/@nodeData/@connections.12" name="block" type="id_String" xpath="out.body:/flightschedules/flightschedule/block" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.ad" incomingConnections="//@node.5/@nodeData/@connections.13" name="ad" type="id_String" xpath="out.body:/flightschedules/flightschedule/ad" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.fromto" incomingConnections="//@node.5/@nodeData/@connections.14" name="fromto" type="id_String" xpath="out.body:/flightschedules/flightschedule/fromto" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.airport_code4" incomingConnections="//@node.5/@nodeData/@connections.15" name="airport_code4" type="id_String" xpath="out.body:/flightschedules/flightschedule/airport_code4" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.airport_code3" incomingConnections="//@node.5/@nodeData/@connections.16" name="airport_code3" type="id_String" xpath="out.body:/flightschedules/flightschedule/airport_code3" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.opr_code2" incomingConnections="//@node.5/@nodeData/@connections.17" name="opr_code2" type="id_String" xpath="out.body:/flightschedules/flightschedule/opr_code2" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.opr_code3" incomingConnections="//@node.5/@nodeData/@connections.18" name="opr_code3" type="id_String" xpath="out.body:/flightschedules/flightschedule/opr_code3" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.aircraft" incomingConnections="//@node.5/@nodeData/@connections.19" name="aircraft" type="id_String" xpath="out.body:/flightschedules/flightschedule/aircraft" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.callsign2" incomingConnections="//@node.5/@nodeData/@connections.20" name="callsign2" type="id_String" xpath="out.body:/flightschedules/flightschedule/callsign2" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.callsign3" incomingConnections="//@node.5/@nodeData/@connections.21" name="callsign3" type="id_String" xpath="out.body:/flightschedules/flightschedule/callsign3" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.bay" incomingConnections="//@node.5/@nodeData/@connections.22" name="bay" type="id_String" xpath="out.body:/flightschedules/flightschedule/bay" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.a_dlc" incomingConnections="//@node.5/@nodeData/@connections.23" name="a_dlc" type="id_String" xpath="out.body:/flightschedules/flightschedule/a_dlc" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.dtpsc" incomingConnections="//@node.5/@nodeData/@connections.24" name="dtpsc" type="id_String" xpath="out.body:/flightschedules/flightschedule/dtpsc" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.dac" incomingConnections="//@node.5/@nodeData/@connections.25" name="dac" type="id_String" xpath="out.body:/flightschedules/flightschedule/dac" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.dec" incomingConnections="//@node.5/@nodeData/@connections.26" name="dec" type="id_String" xpath="out.body:/flightschedules/flightschedule/dec" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.a_dmtow" incomingConnections="//@node.5/@nodeData/@connections.27" name="a_dmtow" type="id_String" xpath="out.body:/flightschedules/flightschedule/a_dmtow" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.dpuw1" incomingConnections="//@node.5/@nodeData/@connections.28" name="dpuw1" type="id_String" xpath="out.body:/flightschedules/flightschedule/dpuw1" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.dauw" incomingConnections="//@node.5/@nodeData/@connections.29" name="dauw" type="id_String" xpath="out.body:/flightschedules/flightschedule/dauw" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.deu" incomingConnections="//@node.5/@nodeData/@connections.30" name="deu" type="id_String" xpath="out.body:/flightschedules/flightschedule/deu" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.a_ilc" incomingConnections="//@node.5/@nodeData/@connections.31" name="a_ilc" type="id_String" xpath="out.body:/flightschedules/flightschedule/a_ilc" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.itpsc" incomingConnections="//@node.5/@nodeData/@connections.32" name="itpsc" type="id_String" xpath="out.body:/flightschedules/flightschedule/itpsc" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.iac" incomingConnections="//@node.5/@nodeData/@connections.33" name="iac" type="id_String" xpath="out.body:/flightschedules/flightschedule/iac" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.iec" incomingConnections="//@node.5/@nodeData/@connections.34" name="iec" type="id_String" xpath="out.body:/flightschedules/flightschedule/iec" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.a_imtow" incomingConnections="//@node.5/@nodeData/@connections.35" name="a_imtow" type="id_String" xpath="out.body:/flightschedules/flightschedule/a_imtow" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.ipuw1" incomingConnections="//@node.5/@nodeData/@connections.36" name="ipuw1" type="id_String" xpath="out.body:/flightschedules/flightschedule/ipuw1" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.iauw" incomingConnections="//@node.5/@nodeData/@connections.37" name="iauw" type="id_String" xpath="out.body:/flightschedules/flightschedule/iauw" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            </children>
+          </children>
+        </nodes>
+        <nodes expression="&quot;Flights retrieved successfully&quot;" name="string" pattern="" type="id_String" xpath="out/string"/>
+      </outputTrees>
+      <varTables minimized="true" name="Var"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.0" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.1" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.2" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.2" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.3" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.3" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.4" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.4" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.5" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.5" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.6" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.6" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.7" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.7" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.8" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.8" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.9" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.9" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.10" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.10" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.11" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.11" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.12" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.12" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.13" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.13" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.14" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.14" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.15" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.15" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.16" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.16" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.17" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.17" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.18" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.18" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.19" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.19" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.20" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.20" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.21" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.21" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.22" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.22" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.23" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.23" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.24" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.24" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.25" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.25" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.26" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.26" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.27" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.27" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.28" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.28" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.29" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.29" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.30" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.30" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.31" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.31" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.32" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.32" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.33" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.33" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.34" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.34" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.35" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.35" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.36" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.36" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.37" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.37" xsi:type="TalendXMLMap:Connection"/>
+    </nodeData>
+  </node>
+  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="992" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRESTResponse_1"/>
+    <elementParameter field="REST_RESPONSE_SCHEMA_TYPE" name="RESPONSE_TYPE" value="id_Document"/>
+    <elementParameter field="CLOSED_LIST" name="STATUS_CODE" value="200"/>
+    <elementParameter field="TEXT" name="CUSTOM_STATUS_CODE" show="false" value="200"/>
+    <elementParameter field="TABLE" name="RESPONSE_HEADERS"/>
+    <elementParameter field="CHECK" name="UNWRAP_JSON_RESPONSE" value="false"/>
+    <elementParameter field="TEXT" name="JSON_ARRAY_KEYS" value=""/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRESTResponse_1">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="getFIDSDetails" lineStyle="0" metaname="getFIDSDetails" offsetLabelX="0" offsetLabelY="0" source="tRESTRequest_1" target="tExtractJSONFields_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="body"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="getFIDSDetails"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tExtractJSONFields_1" offsetLabelX="0" offsetLabelY="0" source="tExtractJSONFields_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+  </connection>
+  <connection connectorName="FLOW" label="output" lineStyle="0" metaname="output" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tJavaRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="output"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_1" target="tMysqlInput_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tMysqlInput_1" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_1" target="tXMLMap_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="flight_no"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="shop_type"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="dest2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="flight"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="indo"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="loc"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="belt"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="dest"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="arrdep"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="schedule"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="iata"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="sname"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="desk"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="tgl"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="estimate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="term"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="gate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="boarding"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="status"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="a_ilc"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="df"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="callsign3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="dec"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="iec"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="dtpsc"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="dac"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="a_total"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="a_imtow"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="iac"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="d_total"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="itpsc"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="iauw"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="callsign2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="deu"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="scope"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="a_dmtow"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="block"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="bay"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="locked"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ok"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ec"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="regno"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="opr_code3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ad"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="aircraft"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="a_scope"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="fromto"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="opr_code2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="opr"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="airport_code4"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="airport_code3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="dauw"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ipuw1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="dpuw1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="d_scope"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="a_dlc"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="FLOW" label="out" lineStyle="0" metaname="out" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tRESTResponse_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRESTRequest_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMysqlInput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_94d184e3-dcaf-42df-9e31-43d22cd030be"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>YUH6ZDGYQKRwjCeYIHm6IXWgY+h0/8W40yYhmh3E6AT4XskFPFrCqxuyoxFDN0n3tfnQrnXmkPCl
+xNK9XQONXw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_12853120-8d74-44b8-8116-5a3645aa2c9e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ISv44LLMZHd9Yc3RHhlYVfl02vATXTkub/7w0KLTsOZZ4314ibGJjnHcaq/Uoy1TQPdhqNhOg9gk
+HQ3N4Cv/QQ==</DigestValue></Reference></SignedInfo><SignatureValue>yZgTW7YYQwn9gEjoMbWboER2HpA4I2vesgdXvc1k7m1B4e4AOvIZ48UtnF6jCfNwRtcF0dDZlbMe
+Zhpd2JwN4Y6Qs8Maf0W2L3SW0ZAJAjreAmQKzjLWWX1D0yKgoPXI7JJugGEmbnw5pi7Bkw3EajFG
+GrPztwl5uJj6OkKBmLQyJjM/k9ZGs0bjF6B1BLsRSZKsX0884zOR3ufcOy6G6yjqWQEQs+wxPVlB
+F6EXG0ttl1nouCp26tRb5esSefAySA1TJrALh+/lCzD1XwTumImmfpvqci9K78b5mJ48lSoajKGL
+QHR48k5JywnPnyLDvDKVzU7z/M9UjD0YUgUt1Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -134,4 +754,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_37e420a9-9b62-484d-bc4e-d907528769a4" Target="#_b78a7951-6851-474c-b1b8-404a1c141ce3"><Timestamp>2018-08-24 13:05:29</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_12853120-8d74-44b8-8116-5a3645aa2c9e" Target="#_94d184e3-dcaf-42df-9e31-43d22cd030be"><Timestamp>2018-08-24 13:05:51</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
