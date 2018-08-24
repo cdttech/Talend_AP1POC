@@ -137,11 +137,11 @@
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MySQL"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;192.168.254.181&quot;"/>
     <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;ap1_airports&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="pphwy87hqwU="/>
+    <elementParameter field="PASSWORD" name="PASS" value="p2FjNM2tw0r42mOnXDtqvA=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;auditlog&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -460,11 +460,11 @@
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MySQL"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;192.168.254.181&quot;"/>
     <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;ap1_hq&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="pphwy87hqwU="/>
+    <elementParameter field="PASSWORD" name="PASS" value="p2FjNM2tw0r42mOnXDtqvA=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;bp_airport&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -703,11 +703,11 @@
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MySQL"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;192.168.254.181&quot;"/>
     <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;ap1_airports&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="pphwy87hqwU="/>
+    <elementParameter field="PASSWORD" name="PASS" value="p2FjNM2tw0r42mOnXDtqvA=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;auditlog&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -1290,13 +1290,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_d0c51b2f-9a2b-4f6a-b911-9926c24583c7"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>iuDGP5T/qDmKgzMNoSWZGl46G+qlGJkNSmP3zJZvIfB2XWkaLC8o2G62BvVh6VLg36O1BWsR1gTE
-tNS7ws5kqA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_ec141d3d-f665-46f2-88c2-c075caeb1459"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>yhXWDMRkSIwHM5kD2ja8D32Cn7zjJz3qjL1XBOenvRyg1hUJ26GwHoCpbgb+cS3HorirdbtYXnJr
-huaI6yqGxw==</DigestValue></Reference></SignedInfo><SignatureValue>GcIlSxImsurRU+M5DKFzdZshithb/Q7vlgh/wuyPywSEJ3CgSCuCI5JOs+c4lR2cQ+JbVmPy3NS6
-sEYfKfMonST+otLK454/x6fUrD1R18ANpmUB4njFqO7+v3LSVG56hBC5dUjDXrgnU6YTpIM8aWDt
-V2o4eAgIaGL/rzfLA2EOxIcRvRaO1OAnL0q5QAPnH1j9VEiYBAl2/Jk/fhiTpeMFX1yMD0/1HA3x
-nOhYipex3nvP05yUBO+AY7Jy/G/nQyjlyR4xWhqjz17oRP8BJ/wFyfl/OSRCPxZ8Ljyk+H3br+8v
-afcPojZzoguCU8e6dJogaPJ3w4x+Txg3vDNstg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_163d9433-6016-4402-8a88-7753beb883c7"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>NImOGqwYjpZbGOgsI9k89I3ND5AF/NxJ7GP+PFkD643zHzWvoiXh+1XADTIsIDQWMbjcZ4sGmSub
+B9G8pQV4Mg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_962ac711-859d-4294-b3a9-9590474b8eb1"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>HD7T2vOFpo92eycWW13M9PNc2hYYcViSd3swXhapvCGC98Z/LfT2ezW/pyFmnVAEPXcsAJwPEnh0
+RN3wvnO4Kw==</DigestValue></Reference></SignedInfo><SignatureValue>hy717QeI33XBsJbjjoFk3kDzHPHx79oNnxKqPpBLK2BUYYe6bjZl2JFTOjLaRRkUIjotBTKR3NPM
+JXR+skLPD08A15J0xcdeMkeFk+hU6bL/He9oaZ608YBzvxkSiRGkMCV9i/CYQxj710JxkCXnySa3
+TSikH6NHd2MTwL6eo/jfFg9I4NnJLoyw3IH5LU7efZ8oS3EVxMmBCmVrp94RioYtqE871L2jcfnm
+RkVTiMLWElDiAOddQWIBjslCbeeSy7RuMkgCCLm/D842Z7GcN5s0v1CCe/cnh/b7ZymQrj45oseI
+BQoYEJKbAcY+BOHd1XIgTRYmHvpzR9p9YlNBZA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -1320,4 +1320,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_ec141d3d-f665-46f2-88c2-c075caeb1459" Target="#_d0c51b2f-9a2b-4f6a-b911-9926c24583c7"><Timestamp>2018-08-24 12:41:34</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_962ac711-859d-4294-b3a9-9590474b8eb1" Target="#_163d9433-6016-4402-8a88-7753beb883c7"><Timestamp>2018-08-24 12:42:50</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
