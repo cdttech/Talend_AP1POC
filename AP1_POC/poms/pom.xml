@@ -28,6 +28,7 @@
     <module>jobs/process/AP1_POC/AP1_POC/AP1_POC/getcpms_trsid_0.1</module>
     <module>jobs/process/AP1_POC/AP1_POC/AP1_POC/getbpairportsbysea_code_0.1</module>
     <module>jobs/process/AP1_POC/hq_webposs_post_0.1</module>
+    <module>jobs/process/AP1_POC/hq_siopskom_post_0.1</module>
   </modules>
   <properties>
     <talend.project.name>AP1_POC</talend.project.name>
