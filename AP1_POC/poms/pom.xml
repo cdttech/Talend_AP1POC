@@ -31,6 +31,7 @@
     <module>jobs/process/AP1_POC/AP1_POC/getByID/getcpms_trsid_0.1</module>
     <module>jobs/process/AP1_POC/AP1_POC/getByID/getfidsbyflight_0.1</module>
     <module>jobs/process/AP1_POC/AP1_POC/getByID/getwebpossbycodeofitem_0.1</module>
+    <module>jobs/process/AP1_POC/AP1_POC/getByID/getsiopskombyid_0.1</module>
   </modules>
   <properties>
     <talend.project.name>AP1_POC</talend.project.name>
