@@ -22,15 +22,15 @@
     <module>jobs/process/AP1_POC/data_pax_external_provider_0.1</module>
     <module>jobs/process/AP1_POC/product_provider_0.1</module>
     <module>code/beans</module>
-    <module>jobs/process/AP1_POC/AP1_POC/AP1_POC/getwebpossbycodeofitem_0.1</module>
-    <module>jobs/process/AP1_POC/AP1_POC/AP1_POC/getfidsbyflight_0.1</module>
-    <module>jobs/process/AP1_POC/AP1_POC/AP1_POC/getcpms_trsid_0.1</module>
-    <module>jobs/process/AP1_POC/AP1_POC/AP1_POC/getbpairportsbysea_code_0.1</module>
     <module>jobs/process/AP1_POC/hq_webposs_post_0.1</module>
     <module>jobs/process/AP1_POC/hq_siopskom_post_0.1</module>
     <module>jobs/process/AP1_POC/hq_pots_post_0.1</module>
     <module>jobs/process/hq_fids_post_0.1</module>
     <module>jobs/process/hq_cpms_post_0.1</module>
+    <module>jobs/process/AP1_POC/AP1_POC/getByID/getbpairportsbysea_code_0.1</module>
+    <module>jobs/process/AP1_POC/AP1_POC/getByID/getcpms_trsid_0.1</module>
+    <module>jobs/process/AP1_POC/AP1_POC/getByID/getfidsbyflight_0.1</module>
+    <module>jobs/process/AP1_POC/AP1_POC/getByID/getwebpossbycodeofitem_0.1</module>
   </modules>
   <properties>
     <talend.project.name>AP1_POC</talend.project.name>

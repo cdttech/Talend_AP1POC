@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
   <context confirmationNeeded="false" name="Default">
-    <contextParameter comment="" name="trsid" prompt="trsid?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="CodeofItem" prompt="CodeofItem?" promptNeeded="false" type="id_String" value=""/>
   </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
@@ -117,9 +117,9 @@
   <node componentName="tRESTRequest" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRESTRequest_1"/>
     <elementParameter field="EXTERNAL" name="OAS_IMPORT" value=""/>
-    <elementParameter field="TEXT" name="REST_ENDPOINT" value="&quot;http://192.168.254.180:8092/getCPMSBytrsid&quot;"/>
+    <elementParameter field="TEXT" name="REST_ENDPOINT" value="&quot;http://192.168.254.180:8094/getWebpossByCodeofItem&quot;"/>
     <elementParameter field="TABLE" name="SCHEMAS">
-      <elementValue elementRef="SCHEMA" value="getCPMSDetails"/>
+      <elementValue elementRef="SCHEMA" value="getWebpossDetails"/>
       <elementValue elementRef="HTTP_VERB" value="POST"/>
       <elementValue elementRef="URI_PATTERN" value="&quot;/&quot;"/>
       <elementValue elementRef="CONSUMES" value="JSON"/>
@@ -148,7 +148,7 @@
       <column defaultValue="" key="false" length="0" name="status" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column defaultValue="" key="false" length="1024" name="error" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
-    <metadata connector="FLOW" label="getFIDSDetails" name="getCPMSDetails">
+    <metadata connector="FLOW" label="getFIDSDetails" name="getWebpossDetails">
       <column comment="" key="false" length="-1" name="body" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
@@ -160,13 +160,13 @@
     <elementParameter field="TEXT" name="LOOP_QUERY" value="&quot;/&quot;"/>
     <elementParameter field="TEXT" name="JSON_LOOP_QUERY" show="false" value="&quot;*&quot;"/>
     <elementParameter field="TABLE" name="MAPPING">
-      <elementValue elementRef="SCHEMA_COLUMN" value="trsid"/>
-      <elementValue elementRef="QUERY" value="&quot;trsid&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CodeofItem"/>
+      <elementValue elementRef="QUERY" value="&quot;CodeofItem&quot;"/>
       <elementValue elementRef="NODECHECK" value="false"/>
       <elementValue elementRef="ISARRAY" value="false"/>
     </elementParameter>
     <elementParameter field="TABLE" name="MAPPING_4_JSONPATH" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="trsid"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CodeofItem"/>
       <elementValue elementRef="QUERY" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
@@ -177,10 +177,10 @@
     <elementParameter field="CHECK" name="SPLIT_LIST" show="false" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="req" name="tExtractJSONFields_1">
-      <column comment="" key="false" length="-1" name="trsid" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CodeofItem" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" label="req" name="REJECT">
-      <column comment="" key="false" length="-1" name="trsid" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CodeofItem" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorJSONField" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
@@ -191,7 +191,7 @@
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_RwTA8Kd7EeiJR_waBnMO0g-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_X8hg0KcGEeifWcVJ5FIw2A-tMap_1-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
     <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
@@ -201,26 +201,26 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="output" name="output">
-      <column comment="" key="false" length="-1" name="trsid" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CodeofItem" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="output" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="row2.trsid " name="trsid" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.CodeofItem " name="CodeofItem" nullable="true" type="id_String"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row2" sizeState="INTERMEDIATE">
-        <mapperTableEntries name="trsid" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CodeofItem" nullable="true" type="id_String"/>
       </inputTables>
     </nodeData>
   </node>
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_1"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="// code sample:&#13;&#10;//&#13;&#10;// multiply by 2 the row identifier&#13;&#10;// output_row.id = input_row.id * 2;&#13;&#10;//&#13;&#10;// lowercase the name&#13;&#10;context.trsid = input_row.trsid;&#13;&#10;&#13;&#10;&#13;&#10;System.out.println(&quot;context.trsid&quot;+context.trsid);&#13;&#10;&#13;&#10;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="// code sample:&#13;&#10;//&#13;&#10;// multiply by 2 the row identifier&#13;&#10;// output_row.id = input_row.id * 2;&#13;&#10;//&#13;&#10;// lowercase the name&#13;&#10;context.CodeofItem = input_row.CodeofItem;&#13;&#10;&#13;&#10;&#13;&#10;System.out.println(&quot;context.CodeofItem&quot;+context.CodeofItem);&#13;&#10;&#13;&#10;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="output" name="tJavaRow_1">
-      <column comment="" key="false" length="-1" name="trsid" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CodeofItem" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="96">
@@ -234,12 +234,12 @@
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" value="p2FjNM2tw0r42mOnXDtqvA=="/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;cpms&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;webpos&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select  *  from cpms where trsid = '&quot;+context.trsid+&quot;' &quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select  *  from webpos where Code_of_Item = '&quot;+context.CodeofItem+&quot;' &quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -250,68 +250,153 @@
     <elementParameter field="CHECK" name="ENABLE_STREAM" value="false"/>
     <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
     <elementParameter field="TABLE" name="TRIM_COLUMN">
-      <elementValue elementRef="SCHEMA_COLUMN" value="trsid"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Transaction_Number"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="paymentdate"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Shop_Type"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="shiftworkname"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Flight_No"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="plateno"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Airport_Destination"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="vehicle"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Nationality"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="vehicletype"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Transaction_Date"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="iscust"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Type"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="lostticket"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Username"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="cost"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Transaction_Type"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="voidid"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Item_Category"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="timein"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Code_og_Item_Group"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="timeout"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Name_of_Item_Description"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Code_of_Item"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Barcode_of_Item"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unit_Price_exclude_Tax"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Quantity_of_Item"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UOM"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Currency"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Line_Unit_Discount__FCY_"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Line_Amount_exc_Tax__FCY_"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Line_Vat_Amount__FCY_"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Line_Tax_Amount__FCY_"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Total_Discount_amount__LCY_"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Total_VAT_Amount_LCY_"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Total_Service_Charge_amount_LCY_"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Total_Tax_amount_LCY__Local_Currency_"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Transaction_amount_LCY__Local_Currency_"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Rate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Poss_ID"/>
       <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="cpms" name="tDBInput_2">
-      <column comment="" key="false" length="19" name="trsid" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+    <metadata connector="FLOW" label="webpos" name="tDBInput_2">
+      <column comment="" key="false" length="18" name="Transaction_Number" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="28" name="paymentdate" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="6" name="Shop_Type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="7" name="shiftworkname" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="5" name="Flight_No" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="8" name="plateno" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="3" name="Airport_Destination" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="5" name="vehicle" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="3" name="Nationality" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="vehicletype" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="15" name="Transaction_Date" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="iscust" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="4" name="Type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="lostticket" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="4" name="Username" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="cost" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="5" name="Transaction_Type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="voidid" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="5" name="Item_Category" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="28" name="timein" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="10" name="Code_og_Item_Group" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="28" name="timeout" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="17" name="Name_of_Item_Description" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="Code_of_Item" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="Barcode_of_Item" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="Unit_Price_exclude_Tax" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="Quantity_of_Item" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="3" name="UOM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="3" name="Currency" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="Line_Unit_Discount__FCY_" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="Line_Amount_exc_Tax__FCY_" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="Line_Vat_Amount__FCY_" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="Line_Tax_Amount__FCY_" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="Total_Discount_amount__LCY_" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="Total_VAT_Amount_LCY_" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="Total_Service_Charge_amount_LCY_" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="Total_Tax_amount_LCY__Local_Currency_" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="Transaction_amount_LCY__Local_Currency_" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="Rate" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="6" name="Poss_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <additionalProperties key="Comment" value=""/>
@@ -329,35 +414,69 @@
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
       <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="row1">
-        <nodes name="trsid" outgoingConnections="//@node.5/@nodeData/@connections.0" type="id_Long" xpath="row1/trsid"/>
-        <nodes name="paymentdate" outgoingConnections="//@node.5/@nodeData/@connections.1" type="id_String" xpath="row1/paymentdate"/>
-        <nodes name="shiftworkname" outgoingConnections="//@node.5/@nodeData/@connections.2" type="id_String" xpath="row1/shiftworkname"/>
-        <nodes name="plateno" outgoingConnections="//@node.5/@nodeData/@connections.3" type="id_String" xpath="row1/plateno"/>
-        <nodes name="vehicle" outgoingConnections="//@node.5/@nodeData/@connections.4" type="id_String" xpath="row1/vehicle"/>
-        <nodes name="vehicletype" outgoingConnections="//@node.5/@nodeData/@connections.5" type="id_Integer" xpath="row1/vehicletype"/>
-        <nodes name="iscust" outgoingConnections="//@node.5/@nodeData/@connections.6" type="id_Integer" xpath="row1/iscust"/>
-        <nodes name="lostticket" outgoingConnections="//@node.5/@nodeData/@connections.7" type="id_Integer" xpath="row1/lostticket"/>
-        <nodes name="cost" outgoingConnections="//@node.5/@nodeData/@connections.8" type="id_Integer" xpath="row1/cost"/>
-        <nodes name="voidid" outgoingConnections="//@node.5/@nodeData/@connections.9" type="id_Integer" xpath="row1/voidid"/>
-        <nodes name="timein" outgoingConnections="//@node.5/@nodeData/@connections.10" type="id_String" xpath="row1/timein"/>
-        <nodes name="timeout" outgoingConnections="//@node.5/@nodeData/@connections.11" type="id_String" xpath="row1/timeout"/>
+        <nodes name="Transaction_Number" outgoingConnections="//@node.5/@nodeData/@connections.0" type="id_String" xpath="row1/Transaction_Number"/>
+        <nodes name="Shop_Type" outgoingConnections="//@node.5/@nodeData/@connections.1" type="id_String" xpath="row1/Shop_Type"/>
+        <nodes name="Flight_No" outgoingConnections="//@node.5/@nodeData/@connections.2" type="id_String" xpath="row1/Flight_No"/>
+        <nodes name="Airport_Destination" outgoingConnections="//@node.5/@nodeData/@connections.3" type="id_String" xpath="row1/Airport_Destination"/>
+        <nodes name="Nationality" outgoingConnections="//@node.5/@nodeData/@connections.4" type="id_String" xpath="row1/Nationality"/>
+        <nodes name="Transaction_Date" outgoingConnections="//@node.5/@nodeData/@connections.5" type="id_String" xpath="row1/Transaction_Date"/>
+        <nodes name="Type" outgoingConnections="//@node.5/@nodeData/@connections.6" type="id_String" xpath="row1/Type"/>
+        <nodes name="Username" outgoingConnections="//@node.5/@nodeData/@connections.7" type="id_String" xpath="row1/Username"/>
+        <nodes name="Transaction_Type" outgoingConnections="//@node.5/@nodeData/@connections.8" type="id_String" xpath="row1/Transaction_Type"/>
+        <nodes name="Item_Category" outgoingConnections="//@node.5/@nodeData/@connections.9" type="id_String" xpath="row1/Item_Category"/>
+        <nodes name="Code_og_Item_Group" outgoingConnections="//@node.5/@nodeData/@connections.10" type="id_Integer" xpath="row1/Code_og_Item_Group"/>
+        <nodes name="Name_of_Item_Description" outgoingConnections="//@node.5/@nodeData/@connections.11" type="id_String" xpath="row1/Name_of_Item_Description"/>
+        <nodes name="Code_of_Item" outgoingConnections="//@node.5/@nodeData/@connections.12" type="id_Integer" xpath="row1/Code_of_Item"/>
+        <nodes name="Barcode_of_Item" outgoingConnections="//@node.5/@nodeData/@connections.13" type="id_String" xpath="row1/Barcode_of_Item"/>
+        <nodes name="Unit_Price_exclude_Tax" outgoingConnections="//@node.5/@nodeData/@connections.14" type="id_Integer" xpath="row1/Unit_Price_exclude_Tax"/>
+        <nodes name="Quantity_of_Item" outgoingConnections="//@node.5/@nodeData/@connections.15" type="id_Integer" xpath="row1/Quantity_of_Item"/>
+        <nodes name="UOM" outgoingConnections="//@node.5/@nodeData/@connections.16" type="id_String" xpath="row1/UOM"/>
+        <nodes name="Currency" outgoingConnections="//@node.5/@nodeData/@connections.17" type="id_String" xpath="row1/Currency"/>
+        <nodes name="Line_Unit_Discount__FCY_" outgoingConnections="//@node.5/@nodeData/@connections.18" type="id_Integer" xpath="row1/Line_Unit_Discount__FCY_"/>
+        <nodes name="Line_Amount_exc_Tax__FCY_" outgoingConnections="//@node.5/@nodeData/@connections.19" type="id_Integer" xpath="row1/Line_Amount_exc_Tax__FCY_"/>
+        <nodes name="Line_Vat_Amount__FCY_" outgoingConnections="//@node.5/@nodeData/@connections.20" type="id_String" xpath="row1/Line_Vat_Amount__FCY_"/>
+        <nodes name="Line_Tax_Amount__FCY_" outgoingConnections="//@node.5/@nodeData/@connections.21" type="id_Integer" xpath="row1/Line_Tax_Amount__FCY_"/>
+        <nodes name="Total_Discount_amount__LCY_" outgoingConnections="//@node.5/@nodeData/@connections.22" type="id_Integer" xpath="row1/Total_Discount_amount__LCY_"/>
+        <nodes name="Total_VAT_Amount_LCY_" outgoingConnections="//@node.5/@nodeData/@connections.23" type="id_String" xpath="row1/Total_VAT_Amount_LCY_"/>
+        <nodes name="Total_Service_Charge_amount_LCY_" outgoingConnections="//@node.5/@nodeData/@connections.24" type="id_String" xpath="row1/Total_Service_Charge_amount_LCY_"/>
+        <nodes name="Total_Tax_amount_LCY__Local_Currency_" outgoingConnections="//@node.5/@nodeData/@connections.25" type="id_Integer" xpath="row1/Total_Tax_amount_LCY__Local_Currency_"/>
+        <nodes name="Transaction_amount_LCY__Local_Currency_" outgoingConnections="//@node.5/@nodeData/@connections.26" type="id_Integer" xpath="row1/Transaction_amount_LCY__Local_Currency_"/>
+        <nodes name="Rate" outgoingConnections="//@node.5/@nodeData/@connections.27" type="id_Integer" xpath="row1/Rate"/>
+        <nodes name="Poss_ID" outgoingConnections="//@node.5/@nodeData/@connections.28" type="id_String" xpath="row1/Poss_ID"/>
       </inputTrees>
       <outputTrees activateCondensedTool="true" allInOne="true" name="response">
         <nodes expression="" name="body" type="id_Document" xpath="response/body">
-          <children expression="" main="true" name="cpms" type="id_String" xpath="response.body:/cpms" xsi:type="TalendXMLMap:OutputTreeNode">
-            <children expression="" loop="true" main="true" name="cpmsdetails" type="id_String" xpath="response.body:/cpms/cpmsdetails" xsi:type="TalendXMLMap:OutputTreeNode">
-              <children expression="row1.trsid" incomingConnections="//@node.5/@nodeData/@connections.0" name="trsid" type="id_Long" xpath="response.body:/cpms/cpmsdetails/trsid" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="row1.paymentdate" incomingConnections="//@node.5/@nodeData/@connections.1" name="paymentdate" type="id_String" xpath="response.body:/cpms/cpmsdetails/paymentdate" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="row1.shiftworkname" incomingConnections="//@node.5/@nodeData/@connections.2" name="shiftworkname" type="id_String" xpath="response.body:/cpms/cpmsdetails/shiftworkname" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="row1.plateno" incomingConnections="//@node.5/@nodeData/@connections.3" name="plateno" type="id_String" xpath="response.body:/cpms/cpmsdetails/plateno" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="row1.vehicle" incomingConnections="//@node.5/@nodeData/@connections.4" name="vehicle" type="id_String" xpath="response.body:/cpms/cpmsdetails/vehicle" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="row1.vehicletype" incomingConnections="//@node.5/@nodeData/@connections.5" name="vehicletype" type="id_Integer" xpath="response.body:/cpms/cpmsdetails/vehicletype" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="row1.iscust" incomingConnections="//@node.5/@nodeData/@connections.6" name="iscust" type="id_Integer" xpath="response.body:/cpms/cpmsdetails/iscust" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="row1.lostticket" incomingConnections="//@node.5/@nodeData/@connections.7" name="lostticket" type="id_Integer" xpath="response.body:/cpms/cpmsdetails/lostticket" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="row1.cost" incomingConnections="//@node.5/@nodeData/@connections.8" name="cost" type="id_Integer" xpath="response.body:/cpms/cpmsdetails/cost" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="row1.voidid" incomingConnections="//@node.5/@nodeData/@connections.9" name="voidid" type="id_Integer" xpath="response.body:/cpms/cpmsdetails/voidid" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="row1.timein" incomingConnections="//@node.5/@nodeData/@connections.10" name="timein" type="id_String" xpath="response.body:/cpms/cpmsdetails/timein" xsi:type="TalendXMLMap:OutputTreeNode"/>
-              <children expression="row1.timeout" incomingConnections="//@node.5/@nodeData/@connections.11" name="timeout" type="id_String" xpath="response.body:/cpms/cpmsdetails/timeout" xsi:type="TalendXMLMap:OutputTreeNode"/>
+          <children expression="" loop="true" main="true" name="webposs" type="id_String" xpath="response.body:/webposs" xsi:type="TalendXMLMap:OutputTreeNode">
+            <children expression="" name="webpossdetails" type="id_String" xpath="response.body:/webposs/webpossdetails" xsi:type="TalendXMLMap:OutputTreeNode">
+              <children expression="row1.Transaction_Number" incomingConnections="//@node.5/@nodeData/@connections.0" name="Transaction_Number" type="id_String" xpath="response.body:/webposs/webpossdetails/Transaction_Number" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.Shop_Type" incomingConnections="//@node.5/@nodeData/@connections.1" name="Shop_Type" type="id_String" xpath="response.body:/webposs/webpossdetails/Shop_Type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.Flight_No" incomingConnections="//@node.5/@nodeData/@connections.2" name="Flight_No" type="id_String" xpath="response.body:/webposs/webpossdetails/Flight_No" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.Airport_Destination" incomingConnections="//@node.5/@nodeData/@connections.3" name="Airport_Destination" type="id_String" xpath="response.body:/webposs/webpossdetails/Airport_Destination" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.Nationality" incomingConnections="//@node.5/@nodeData/@connections.4" name="Nationality" type="id_String" xpath="response.body:/webposs/webpossdetails/Nationality" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.Transaction_Date" incomingConnections="//@node.5/@nodeData/@connections.5" name="Transaction_Date" type="id_String" xpath="response.body:/webposs/webpossdetails/Transaction_Date" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.Type" incomingConnections="//@node.5/@nodeData/@connections.6" name="Type" type="id_String" xpath="response.body:/webposs/webpossdetails/Type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.Username" incomingConnections="//@node.5/@nodeData/@connections.7" name="Username" type="id_String" xpath="response.body:/webposs/webpossdetails/Username" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.Transaction_Type" incomingConnections="//@node.5/@nodeData/@connections.8" name="Transaction_Type" type="id_String" xpath="response.body:/webposs/webpossdetails/Transaction_Type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.Item_Category" incomingConnections="//@node.5/@nodeData/@connections.9" name="Item_Category" type="id_String" xpath="response.body:/webposs/webpossdetails/Item_Category" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.Code_og_Item_Group" incomingConnections="//@node.5/@nodeData/@connections.10" name="Code_og_Item_Group" type="id_Integer" xpath="response.body:/webposs/webpossdetails/Code_og_Item_Group" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.Name_of_Item_Description" incomingConnections="//@node.5/@nodeData/@connections.11" name="Name_of_Item_Description" type="id_String" xpath="response.body:/webposs/webpossdetails/Name_of_Item_Description" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.Code_of_Item" incomingConnections="//@node.5/@nodeData/@connections.12" name="Code_of_Item" type="id_Integer" xpath="response.body:/webposs/webpossdetails/Code_of_Item" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.Barcode_of_Item" incomingConnections="//@node.5/@nodeData/@connections.13" name="Barcode_of_Item" type="id_String" xpath="response.body:/webposs/webpossdetails/Barcode_of_Item" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.Unit_Price_exclude_Tax" incomingConnections="//@node.5/@nodeData/@connections.14" name="Unit_Price_exclude_Tax" type="id_Integer" xpath="response.body:/webposs/webpossdetails/Unit_Price_exclude_Tax" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.Quantity_of_Item" incomingConnections="//@node.5/@nodeData/@connections.15" name="Quantity_of_Item" type="id_Integer" xpath="response.body:/webposs/webpossdetails/Quantity_of_Item" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.UOM" incomingConnections="//@node.5/@nodeData/@connections.16" name="UOM" type="id_String" xpath="response.body:/webposs/webpossdetails/UOM" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.Currency" incomingConnections="//@node.5/@nodeData/@connections.17" name="Currency" type="id_String" xpath="response.body:/webposs/webpossdetails/Currency" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.Line_Unit_Discount__FCY_" incomingConnections="//@node.5/@nodeData/@connections.18" name="Line_Unit_Discount__FCY_" type="id_Integer" xpath="response.body:/webposs/webpossdetails/Line_Unit_Discount__FCY_" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.Line_Amount_exc_Tax__FCY_" incomingConnections="//@node.5/@nodeData/@connections.19" name="Line_Amount_exc_Tax__FCY_" type="id_Integer" xpath="response.body:/webposs/webpossdetails/Line_Amount_exc_Tax__FCY_" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.Line_Vat_Amount__FCY_" incomingConnections="//@node.5/@nodeData/@connections.20" name="Line_Vat_Amount__FCY_" type="id_String" xpath="response.body:/webposs/webpossdetails/Line_Vat_Amount__FCY_" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.Line_Tax_Amount__FCY_" incomingConnections="//@node.5/@nodeData/@connections.21" name="Line_Tax_Amount__FCY_" type="id_Integer" xpath="response.body:/webposs/webpossdetails/Line_Tax_Amount__FCY_" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.Total_Discount_amount__LCY_" incomingConnections="//@node.5/@nodeData/@connections.22" name="Total_Discount_amount__LCY_" type="id_Integer" xpath="response.body:/webposs/webpossdetails/Total_Discount_amount__LCY_" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.Total_VAT_Amount_LCY_" incomingConnections="//@node.5/@nodeData/@connections.23" name="Total_VAT_Amount_LCY_" type="id_String" xpath="response.body:/webposs/webpossdetails/Total_VAT_Amount_LCY_" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.Total_Service_Charge_amount_LCY_" incomingConnections="//@node.5/@nodeData/@connections.24" name="Total_Service_Charge_amount_LCY_" type="id_String" xpath="response.body:/webposs/webpossdetails/Total_Service_Charge_amount_LCY_" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.Total_Tax_amount_LCY__Local_Currency_" incomingConnections="//@node.5/@nodeData/@connections.25" name="Total_Tax_amount_LCY__Local_Currency_" type="id_Integer" xpath="response.body:/webposs/webpossdetails/Total_Tax_amount_LCY__Local_Currency_" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.Transaction_amount_LCY__Local_Currency_" incomingConnections="//@node.5/@nodeData/@connections.26" name="Transaction_amount_LCY__Local_Currency_" type="id_Integer" xpath="response.body:/webposs/webpossdetails/Transaction_amount_LCY__Local_Currency_" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.Rate" incomingConnections="//@node.5/@nodeData/@connections.27" name="Rate" type="id_Integer" xpath="response.body:/webposs/webpossdetails/Rate" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row1.Poss_ID" incomingConnections="//@node.5/@nodeData/@connections.28" name="Poss_ID" type="id_String" xpath="response.body:/webposs/webpossdetails/Poss_ID" xsi:type="TalendXMLMap:OutputTreeNode"/>
             </children>
           </children>
         </nodes>
@@ -376,6 +495,23 @@
       <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.9" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.9" xsi:type="TalendXMLMap:Connection"/>
       <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.10" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.10" xsi:type="TalendXMLMap:Connection"/>
       <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.11" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.11" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.12" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.12" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.13" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.13" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.14" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.14" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.15" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.15" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.16" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.16" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.17" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.17" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.18" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.18" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.19" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.19" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.20" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.20" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.21" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.21" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.22" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.22" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.23" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.23" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.24" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.24" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.25" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.25" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.26" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.26" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.27" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.27" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.28" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.28" xsi:type="TalendXMLMap:Connection"/>
     </nodeData>
   </node>
   <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="896" posY="96">
@@ -391,14 +527,14 @@
       <column defaultValue="" key="false" length="0" name="body" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
     </metadata>
   </node>
-  <connection connectorName="FLOW" label="getCPMSDetails" lineStyle="0" metaname="getCPMSDetails" offsetLabelX="0" offsetLabelY="0" source="tRESTRequest_1" target="tExtractJSONFields_1">
+  <connection connectorName="FLOW" label="getWebpossDetails" lineStyle="0" metaname="getWebpossDetails" offsetLabelX="0" offsetLabelY="0" source="tRESTRequest_1" target="tExtractJSONFields_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="body"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="getCPMSDetails"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="getWebpossDetails"/>
   </connection>
   <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tExtractJSONFields_1" offsetLabelX="0" offsetLabelY="0" source="tExtractJSONFields_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -429,13 +565,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_93ff1b1f-af8a-43ea-b532-6e844c8d9569"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>G6rRyDU6Ces9VEXmYIEa4qVPIRlNwEJxMD6FAm1YGPClW43oVq0+MgQzA3KynyueJ/7XBLIk7E6C
-sY8SUx5pJQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_5cdd3e40-fe39-41c5-a883-aef87a3a6b05"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>9ZRgLYs51EVFksF6wPhl9w5l/dN/NQS/hyDERIZLlv6VakKDPGG19qmxZcYwjCibheybIQNGP3et
-iU9pRB6UqA==</DigestValue></Reference></SignedInfo><SignatureValue>nfKbXneE1MjyqEpYhbBEqJljvzMI+eL/DuGXD7dDmJYi8+kKP/0Psx/FcuPqb/BRU9OT4oCZX9mw
-SYlQBXoaw3W7neflKUoHvHHxGgyIMHrcaNMgM8LhMwbLn1Ca4umEXEn/a/u2T6BEcFwc2I7P4LWK
-6pVa1HnqC2WMGm6A7eLb+yj3lhSywwqOyFMgbcwc8+l9udsUYs107EVUrVcHEq8oWzZF1nPQqKrD
-9wnX9sxM4KLeZrsCA3wthr0N6aotg2YcCIvg4cqUHWNaF12EL+cR8tcT57KolHKQlS53wbT53de0
-Dy5ZsJiKYhdep5yqZMUVTlidVA9Yd3y0I0oylA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_da1dd025-9242-44c9-b560-2773feabed7d"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>H2Q9ngyF0mTW4by1r7mFrSLB1T/TVZR2EI6bFdhCnx7Ox8WgnPruTj1/QTkjo8cWdHiI2E6L+FgO
++XRGEeTQLw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_9dc49103-47bd-4248-aea8-84d79c45a403"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>kcMiDs7PNHO0BEkg1pnWt0p4lG9jPUba/756HF5XWyfvgP7diVlJnxu59XO+FV4uPJSywOoZFVpm
+zkbhk4WEng==</DigestValue></Reference></SignedInfo><SignatureValue>tR+DNd5IWWCMnKnpv+IWpHjpUi94GAFb6th+oHrHvdY+bLJ/B4nCOERoMPLeJpnj2EuIl2D2Lhmn
+st1r3vXuF4azjZlBkoi+ZUsk8Zibz4FYI7aQSRVEWw80fI3nJrgpyRJ6UumvKl8DT2dkN0osA1tu
+GI8p8UZFFTuM7tO5hZWD9m2CgxYWjYpzBnY638Lr8J/v+j411f2k3wewYRMi7EhEcfGguh465Njz
+iBdcxzM0L9q/lOqo3ZnvOyKXkK6ZV1mgzmnig3ZywVWJ644b7udlo+Ywi12Eqd8sglbLQ0bUzAWH
+kXG3AlSllsqkRB8ti4y5OVfxpuapLipX5WaSBQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -459,4 +595,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_5cdd3e40-fe39-41c5-a883-aef87a3a6b05" Target="#_93ff1b1f-af8a-43ea-b532-6e844c8d9569"><Timestamp>2018-08-24 11:15:21</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_9dc49103-47bd-4248-aea8-84d79c45a403" Target="#_da1dd025-9242-44c9-b560-2773feabed7d"><Timestamp>2018-08-24 13:05:19</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
