@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
-  <TalendProperties:Project xmi:id="__Z0RkKRIEei2LLUT3N3rjQ" label="AP1_POC" description="" language="java" technicalLabel="AP1_POC" creationDate="2018-08-20T14:08:34.000+0700" author="__Z0RkaRIEei2LLUT3N3rjQ" productVersion="Talend Data Fabric-7.0.1.20180411_1414" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/cdttech/Talend_AP1POC.git&quot;,&quot;login&quot;:&quot;cdttech&quot;,&quot;passwd&quot;:&quot;1ZV6FI0tQFh5wD2DQ9V+5w==&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DI" itemsRelationVersion="1.3">
+  <TalendProperties:Project xmi:id="__Z0RkKRIEei2LLUT3N3rjQ" label="AP1_POC" description="" language="java" technicalLabel="AP1_POC" creationDate="2018-08-20T00:08:34.000-0700" author="__Z0RkaRIEei2LLUT3N3rjQ" productVersion="Talend Data Fabric-7.0.1.20180411_1414" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/cdttech/Talend_AP1POC.git&quot;,&quot;login&quot;:&quot;cdttech&quot;,&quot;passwd&quot;:&quot;1ZV6FI0tQFh5wD2DQ9V+5w==&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DI" itemsRelationVersion="1.3">
     <technicalStatus xmi:id="_A2mYoKRJEei2LLUT3N3rjQ" label="development" code="DEV"/>
     <technicalStatus xmi:id="_A2mYoaRJEei2LLUT3N3rjQ" label="testing" code="TEST"/>
     <technicalStatus xmi:id="_A2mYoqRJEei2LLUT3N3rjQ" label="production" code="PROD"/>
@@ -339,18 +339,12 @@
       <relatedItems xmi:id="__lKWJKeOEeiqM5GTq2b6mw" id="SQLike" version="Latest" type="routine"/>
       <relatedItems xmi:id="__lKWJaeOEeiqM5GTq2b6mw" id="Numeric" version="Latest" type="routine"/>
       <relatedItems xmi:id="__lKWJqeOEeiqM5GTq2b6mw" id="TalendString" version="Latest" type="routine"/>
-      <relatedItems xmi:id="__lKWJ6eOEeiqM5GTq2b6mw" id="DataMasking" version="Latest" type="routine"/>
       <relatedItems xmi:id="__lKWKKeOEeiqM5GTq2b6mw" id="DataOperation" version="Latest" type="routine"/>
-      <relatedItems xmi:id="__lKWKaeOEeiqM5GTq2b6mw" id="DqStringHandling" version="Latest" type="routine"/>
       <relatedItems xmi:id="__lKWKqeOEeiqM5GTq2b6mw" id="StringHandling" version="Latest" type="routine"/>
       <relatedItems xmi:id="__lKWK6eOEeiqM5GTq2b6mw" id="TalendDataGenerator" version="Latest" type="routine"/>
       <relatedItems xmi:id="__lKWLKeOEeiqM5GTq2b6mw" id="TalendDate" version="Latest" type="routine"/>
-      <relatedItems xmi:id="__lKWLaeOEeiqM5GTq2b6mw" id="DataQuality" version="Latest" type="routine"/>
       <relatedItems xmi:id="__lKWLqeOEeiqM5GTq2b6mw" id="Mathematical" version="Latest" type="routine"/>
       <relatedItems xmi:id="__lKWL6eOEeiqM5GTq2b6mw" id="Relational" version="Latest" type="routine"/>
-      <relatedItems xmi:id="__lKWMKeOEeiqM5GTq2b6mw" id="DQTechnical" version="Latest" type="routine"/>
-      <relatedItems xmi:id="__lKWMaeOEeiqM5GTq2b6mw" id="DataQualityDependencies" version="Latest" type="routine"/>
-      <relatedItems xmi:id="__lKWMqeOEeiqM5GTq2b6mw" id="MDM" version="Latest" type="routine"/>
       <relatedItems xmi:id="__lKWM6eOEeiqM5GTq2b6mw" id="TalendStringUtil" version="Latest" type="routine"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_jAtIEKeXEeiqM5GTq2b6mw">
