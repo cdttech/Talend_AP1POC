@@ -39,6 +39,7 @@
     <module>jobs/process/AP1_POC/hq_pots_post_0.2</module>
     <module>jobs/process/AP1_POC/hq_siopskom_post_0.2</module>
     <module>jobs/process/AP1_POC/hq_webposs_post_0.2</module>
+    <module>jobs/process/AP1_POC/potsprovider_0.2</module>
   </modules>
   <properties>
     <talend.project.name>AP1_POC</talend.project.name>
