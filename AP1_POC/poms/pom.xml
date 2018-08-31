@@ -35,6 +35,7 @@
     <module>jobs/process/AP1_POC/siopskonprovider_0.1</module>
     <module>jobs/process/AP1_POC/fidsprovider_0.2</module>
     <module>jobs/process/AP1_POC/cpmsprovider_0.2</module>
+    <module>jobs/process/AP1_POC/fidsprovider_0.3</module>
   </modules>
   <properties>
     <talend.project.name>AP1_POC</talend.project.name>
