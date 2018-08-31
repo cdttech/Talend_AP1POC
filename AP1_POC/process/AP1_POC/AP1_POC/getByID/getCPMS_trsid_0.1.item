@@ -479,6 +479,7 @@
   </node>
   <node componentName="tMomConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMomConnection_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CLOSED_LIST" name="SERVER" value="ActiveMQ"/>
     <elementParameter field="CHECK" name="USE_SSL" value="false"/>
     <elementParameter field="LABEL" name="USE_SSL_NOTE" show="false" value="Notice: You should use tSetKeysore or JVM arguments to specify keystore or truststore"/>
@@ -539,8 +540,8 @@
     <elementParameter field="TEXT" name="SERVERPORT" show="false" value="&quot;1414&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
-    <elementParameter field="TEXT" name="TO" value="&quot;HQ&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="MSGTYPE" value="Queue"/>
+    <elementParameter field="TEXT" name="TO" show="false" value="&quot;HQ&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="MSGTYPE" show="false" value="Queue"/>
     <elementParameter field="TEXT" name="CHANNEL" show="false" value="&quot;DC.SVRCONN&quot;"/>
     <elementParameter field="CLOSED_LIST" name="MESSAGE_BODY_TYPE" value="Text"/>
     <elementParameter field="CHECK" name="IS_TRANSACTED" show="false" value="false"/>
@@ -550,11 +551,11 @@
     <elementParameter field="TABLE" name="ADDITIONAL_OPTIONS" show="false"/>
     <elementParameter field="CHECK" name="USE_FORMAT" show="false" value="false"/>
     <elementParameter field="TEXT" name="WS_MQ_FORMAT" show="false" value="&quot;MQSTR&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="DELIVERY_MODE" value="N_PERSISTENT"/>
+    <elementParameter field="CLOSED_LIST" name="DELIVERY_MODE" show="false" value="N_PERSISTENT"/>
     <elementParameter field="CLOSED_LIST" name="ACKNOWLEDGMENT_MODE" show="false" value="AUTO_ACKNOWLEDGE"/>
-    <elementParameter field="CHECK" name="SET_JMS_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="SET_JMS_HEADER" show="false" value="false"/>
     <elementParameter field="TABLE" name="JMS_HEADERS" show="false"/>
-    <elementParameter field="CHECK" name="SET_JMS_PROPERTIES" value="false"/>
+    <elementParameter field="CHECK" name="SET_JMS_PROPERTIES" show="false" value="false"/>
     <elementParameter field="TABLE" name="JMS_PROPERTIES" show="false"/>
     <elementParameter field="CHECK" name="SET_MQMD_FIELDS" show="false" value="false"/>
     <elementParameter field="TABLE" name="MQMD_FIELDS" show="false"/>
@@ -588,7 +589,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJMSOutput_1"/>
     <elementParameter field="MODULE_LIST" name="DRIVER_JAR" value="activemq-all-5.10.0.jar"/>
     <elementParameter field="TEXT" name="CONTEXT_PROVIDER" value="&quot;org.apache.activemq.jndi.ActiveMQInitialContextFactory&quot;"/>
-    <elementParameter field="TEXT" name="SERVER_URL" value="&quot;tcp://localhost:61616&quot;"/>
+    <elementParameter field="TEXT" name="SERVER_URL" value="&quot;tcp://192.168.254.181:61616&quot;"/>
     <elementParameter field="TEXT" name="CONN_FACTORY_NAME" value="&quot;ConnectionFactory&quot;"/>
     <elementParameter field="CHECK" name="USER_IDENTITY" value="true"/>
     <elementParameter field="TEXT" name="USER" value="&quot;admin&quot;"/>
@@ -691,13 +692,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_3d978e42-074c-4a0e-85a9-778334f9a7e6"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>UTqGAGX7t/s4ot8EZtUIvWNaOQkkQpl6Nq3PdYEbK6guyWO79o89H0jUdDUNO5kOGu1WSO6SCDZy
-UZBd+QehUg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_ad16e893-4036-4522-bcce-3d8b62e313c2"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>lUnBeVrB4Pq0T+9p+8VliHngJtOEYV47I9W3UmkVBtAMjWpgT0xjnmMn4g66jv0Ixsi3l/WqBx27
-6UEPhvcQsQ==</DigestValue></Reference></SignedInfo><SignatureValue>2sl09mlTuE4Ze3AnPVKXSdbQnJnYCQHQKuCt2C8qF1mpXhoxvA7pKsC/tn40n8P/TB/fn5bMRsmc
-KwwNbQaXNX4PS5W5HqNXojo9KUkFnF2JNt3RJmDCOZlcOdPGpz5JAb3PZqDghphOggExFiAgTuDt
-yLqQ0JxnwuCYToZFxsO+CHm6Q8ol3GGKTyJH955pTAe7YBZwm6D1QuqwPu9zliuPQiqY/7blIwTT
-FtGyfb86/m3renBYkPoKLP4uotunhIRLmpXGt1qkIqb28xQrYU9o1rFFTcVRtucu+bertWQLNdRq
-qTol73FE4zVpiPsojBCFqIQtDj8a1RHG0dZFDw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_792d9351-e93f-4c97-98c7-e866ec7574f4"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>pIeKQFGMAmsvNnopu3mhJM5Op27LXmcC6GvifFonfldsZy7mSaaiCex+QjNK6jOoXxKsUw3QA8BP
+uvBxhQw8fg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_f09ac476-39a3-4410-91f5-74d207389e93"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>G+OUWh3KH+lA2INBEMs+3aqW9/L59FhFABqQmpNV0YgvtuqOR/P65pp3Zy36PLnDGF52zGNhhMeS
+poaCcScjMg==</DigestValue></Reference></SignedInfo><SignatureValue>JgHnG8/UHYQAcZei/q5wqQX8+W5ju3+x83S+8Blm61VrHIecK76xhAfBgcW8HgxyTXrnfQhkBT4q
+wtcLF54GuQ7kOMTRRuBy7A1VVG5bQJGGuOWh1Gz+Jxk4e9ilEcYRdIDJYyHQQz/pZ9l+HNWA9N2p
+q4iyvSskM+wJ5jGnajYf+GyFFWJB2kpv8xK/Me5YFDQvpDeWRhdm4vKdomEba0O3B/eTY5yjru2c
+o0p9SCtz5+IqhH9oKLj+mWI3LsOO7lFIJ+9ltKq/W3qcVnIAK66KHCL+L9sY3wLt1lW+bx2FZtl+
+4Ak1ksHK9ITIVRTwATVLalZ1XWcGjX8nfjXAUA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -721,4 +722,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_ad16e893-4036-4522-bcce-3d8b62e313c2" Target="#_3d978e42-074c-4a0e-85a9-778334f9a7e6"><Timestamp>2018-08-31 05:49:35</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_f09ac476-39a3-4410-91f5-74d207389e93" Target="#_792d9351-e93f-4c97-98c7-e866ec7574f4"><Timestamp>2018-08-31 05:51:48</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
