@@ -108,7 +108,7 @@
     <routinesParameter id="_BpGMkKRJEei2LLUT3N3rjQ" name="TalendStringUtil"/>
     <routinesParameter id="_BnJr0KRJEei2LLUT3N3rjQ" name="TalendString"/>
   </parameters>
-  <node componentName="tRESTRequest" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="160">
+  <node componentName="tRESTRequest" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRESTRequest_1"/>
     <elementParameter field="EXTERNAL" name="OAS_IMPORT" value=""/>
     <elementParameter field="TEXT" name="REST_ENDPOINT" value="&quot;http://192.168.254.180:8075/getCPMSBytrsid&quot;"/>
@@ -146,7 +146,7 @@
       <column comment="" key="false" length="-1" name="body" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tExtractJSONFields" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="160">
+  <node componentName="tExtractJSONFields" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tExtractJSONFields_1"/>
     <elementParameter field="CLOSED_LIST" name="READ_BY" value="XPATH"/>
     <elementParameter field="CLOSED_LIST" name="JSON_PATH_VERSION" show="false" value="2_1_0"/>
@@ -180,7 +180,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="384" posY="160">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="384" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -208,7 +208,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="160">
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_1"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="// code sample:&#13;&#10;//&#13;&#10;// multiply by 2 the row identifier&#13;&#10;// output_row.id = input_row.id * 2;&#13;&#10;//&#13;&#10;// lowercase the name&#13;&#10;context.trsid = input_row.trsid;&#13;&#10;&#13;&#10;&#13;&#10;System.out.println(&quot;context.trsid&quot;+context.trsid);&#13;&#10;&#13;&#10;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -217,7 +217,7 @@
       <column comment="" key="false" length="-1" name="trsid" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="160">
+  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_2"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
@@ -311,7 +311,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="768" posY="160">
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="768" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tXMLMap_1"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="false"/>
@@ -372,7 +372,7 @@
       <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.11" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.11" xsi:type="TalendXMLMap:Connection"/>
     </nodeData>
   </node>
-  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="896" posY="160">
+  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="896" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRESTResponse_1"/>
     <elementParameter field="REST_RESPONSE_SCHEMA_TYPE" name="RESPONSE_TYPE" value="id_Document"/>
     <elementParameter field="CLOSED_LIST" name="STATUS_CODE" value="200"/>
@@ -385,7 +385,7 @@
       <column defaultValue="" key="false" length="0" name="body" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogCatcher" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="416">
+  <node componentName="tLogCatcher" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogCatcher_1"/>
     <elementParameter field="CHECK" name="CATCH_JAVA_EXCEPTION" value="true"/>
     <elementParameter field="CHECK" name="CATCH_TDIE" value="true"/>
@@ -407,7 +407,7 @@
       <column defaultValue="" key="false" length="3" name="code" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="416">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
@@ -464,7 +464,7 @@
       <column defaultValue="" key="false" length="3" name="code" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="416">
+  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="736" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRESTResponse_2"/>
     <elementParameter field="REST_RESPONSE_SCHEMA_TYPE" name="RESPONSE_TYPE" value="id_String"/>
     <elementParameter field="CLOSED_LIST" name="STATUS_CODE" value="200"/>
@@ -477,7 +477,7 @@
       <column defaultValue="" key="false" length="0" name="body" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMomConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="32">
+  <node componentName="tMomConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMomConnection_1"/>
     <elementParameter field="CLOSED_LIST" name="SERVER" value="ActiveMQ"/>
     <elementParameter field="CHECK" name="USE_SSL" value="false"/>
@@ -502,7 +502,7 @@
     <elementParameter field="CLOSED_LIST" name="MQ_SSL_CIPHER" show="false" value="SSL_RSA_WITH_NULL_MD5"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="288">
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFixedFlowInput_1"/>
     <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
     <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
@@ -521,7 +521,7 @@
       <column key="false" length="255" name="message" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMomOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="288">
+  <node componentName="tMomOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMomOutput_1"/>
     <elementParameter field="CHECK" name="USE_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMomConnection_1"/>
@@ -572,8 +572,9 @@
       <column defaultValue="" key="false" length="255" name="message" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJMSOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="288">
+  <node componentName="tJMSOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="864" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJMSOutput_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="MODULE_LIST" name="DRIVER_JAR" value="activemq-all-5.10.0.jar"/>
     <elementParameter field="TEXT" name="CONTEXT_PROVIDER" value="&quot;org.apache.activemq.jndi.ActiveMQInitialContextFactory&quot;"/>
     <elementParameter field="TEXT" name="SERVER_URL" value="&quot;tcp://192.168.254.181:61616&quot;"/>
@@ -591,6 +592,29 @@
     <metadata connector="FLOW" name="tJMSOutput_1">
       <column key="false" length="0" name="messageContent" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
+  </node>
+  <node componentName="tMysqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_YWZaAKaxEei2LLUT3N3rjQ"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;192.168.254.181&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;ap1_airports&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="p2FjNM2tw0r42mOnXDtqvA=="/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="AP1_Airports"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
   <connection connectorName="FLOW" label="getCPMSDetails" lineStyle="0" metaname="getCPMSDetails" offsetLabelX="0" offsetLabelY="0" source="tRESTRequest_1" target="tExtractJSONFields_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -643,6 +667,9 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
   </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tMomConnection_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk2"/>
+  </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRESTRequest_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
@@ -673,13 +700,18 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_564ba2d6-1e0c-48fb-8954-6be515ceb307"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>loYYQwRXlbw0MvqpNaiy7v5Msox5CINqqTE5I0D9vb0ZPppKiukV68qIIzRK3raNhO0vAtrfr4Lr
-bUDPybaaYg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_54f2c0d2-91ac-49f2-812f-1f4cf6a8a716"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>QIlyG+qq5KBaz8Is/7GpHBzdp1onPxAUtIaoJmGm9O+rgFOZpL6eEIILuT2vGA/U5wN5F4amcrqK
-gv1mWCSMfg==</DigestValue></Reference></SignedInfo><SignatureValue>lcPMQ2/CPH2UujLduBxJ03arBXXFKGs71quGx7Y0rPoetiGo4LK4pRF3lH6omDXCTTTFNKTpRW2k
-0maifFx6TjrBvI/GdQGcdpzmW0LKFxw7gCrWUHNKB1W7JGo5U1NrBzpjnLrNkbis95l5Prbqp/gs
-Wf3lvnxRIZ5Fu54zk8WdZvtReWufB9n2UqSLh/+lGgTSPFBoqmpZN/KjixDqAGadpixrPGX1H8w2
-VCAiA26Vh/pEUSut+o3c7b8B+LgV0ycJN1MYxMbAil2VJ3J0qgWMWUtcJgmLYoLDzXlFtTfk+wSK
-XqxsBS+zfQCgC77+lTWIvhrB7SjSOPBrWyKVVg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_351323bf-9d9a-44d4-a25a-4077400503be"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>kaFgzk8C4v43ZUJX6DSot07okzJld7W2hjDyrsaPNXuwY38V5hIG9XxXEnL5lXH3ghu90t9/uIm0
+AMmfkNB4rw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_2e4da386-b8ee-4754-afce-d07abfd3cf4c"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>LZTqTJif0tE7ZsrDKhvtsFG0ygIDM1rvj0uAJhn+S3gehlDTC42zntWevWP3ogncZebKxLMJFyNn
+WZRP/ZT7Hw==</DigestValue></Reference></SignedInfo><SignatureValue>bevCojSZV0/3xeXUi2QHS+olOBsDgSMguZ9rhmAdOaTvMbkQywMq5GJOgE1eWPD1KAHBfQ5KTpQz
+KhPa+JEum0bH5b4AQKjtVJlgToF1g3tAFGRZS2O1tJifErSgyX+CKLwZlNL8gPJatzlanIKTRvQS
+MMpfh0C++uvRRqgxN+4bT7pUGrGRGK+4l3m3IqTiVQ+pjbfpAJ3WqeWg3DfGVwYW45oQVnK6+P0+
+7Ve/Kqw/6IPAnBstih+Vi4Pg1PHUXI3wuG7JHoQvydVsEAek8zDfHlAYJOWkOJeK9DaKYVeDhnyn
+k0aI/U0T/Dg+1NzzM2Pn741o2L/p2ZEgsZsTQg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -703,4 +735,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_54f2c0d2-91ac-49f2-812f-1f4cf6a8a716" Target="#_564ba2d6-1e0c-48fb-8954-6be515ceb307"><Timestamp>2018-08-31 06:09:06</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_2e4da386-b8ee-4754-afce-d07abfd3cf4c" Target="#_351323bf-9d9a-44d4-a25a-4077400503be"><Timestamp>2018-08-31 06:10:22</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
