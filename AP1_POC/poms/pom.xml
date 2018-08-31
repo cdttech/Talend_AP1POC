@@ -48,6 +48,7 @@
     <module>jobs/process/AP1_POC/AP1_POC/getByID/getpotsbysea_code_0.2</module>
     <module>jobs/process/AP1_POC/AP1_POC/getByID/getsiopskombyid_0.2</module>
     <module>jobs/process/AP1_POC/AP1_POC/getByID/getwebpossbycodeofitem_0.2</module>
+    <module>jobs/process/AP1_POC/AP1_POC/getByID/getcpms_trsid_0.2</module>
   </modules>
   <properties>
     <talend.project.name>AP1_POC</talend.project.name>
