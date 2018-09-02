@@ -6,12 +6,12 @@
     <groupId>org.example.ap1_poc</groupId>
     <artifactId>code.Master</artifactId>
     <version>7.0.1</version>
-    <relativePath>../../../../</relativePath>
+    <relativePath>../../../../../</relativePath>
   </parent>
-  <groupId>org.example.ap1_poc.route</groupId>
-  <artifactId>Web_POSS_FTP_Post</artifactId>
+  <groupId>org.example.ap1_poc.job</groupId>
+  <artifactId>Web_POSS_FTP</artifactId>
   <version>0.1.0</version>
-  <name>AP1_POC Web_POSS_FTP_Post-0.1.0 (0.1,Routes) Bundle</name>
+  <name>AP1_POC Web_POSS_FTP-0.1.0 (0.1,Job Designs) Bundle</name>
   <properties>
     <output.resources.dir>${talend.job.name}/src/main/resources</output.resources.dir>
     <talend.job.applyContextToChildren>false</talend.job.applyContextToChildren>
@@ -19,11 +19,11 @@
     <current.int-resources.dir>${basedir}/src/main/resources</current.int-resources.dir>
     <talend.job.version>0.1</talend.job.version>
     <talend.project.name.lowercase>ap1_poc</talend.project.name.lowercase>
-    <talend.job.path>ap1_poc/web_poss_ftp_post_0_1</talend.job.path>
+    <talend.job.path>ap1_poc/web_poss_ftp_0_1</talend.job.path>
     <maven.build.timestamp.format>yyyy-MM-dd HHmmssSSS</maven.build.timestamp.format>
     <talend.project.name>AP1_POC</talend.project.name>
     <talend.product.version>7.0.1.20180411_1414</talend.product.version>
-    <talend.job.finalName>web_poss_ftp_post_0_1</talend.job.finalName>
+    <talend.job.finalName>web_poss_ftp_0_1</talend.job.finalName>
     <talend.pigudf.groupid>org.example.ap1_poc.pigudf</talend.pigudf.groupid>
     <talend.routine.groupid>org.example.ap1_poc.code</talend.routine.groupid>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
@@ -33,8 +33,8 @@
     <talend.job.stat>true</talend.job.stat>
     <talend.job.date>${maven.build.timestamp}</talend.job.date>
     <current.resources.dir>${basedir}/src/main/ext-resources</current.resources.dir>
-    <talend.job.name>Web_POSS_FTP_Post</talend.job.name>
-    <talend.job.id>_HQbFYK6lEeiX4fgsa5j7GQ</talend.job.id>
+    <talend.job.name>Web_POSS_FTP</talend.job.name>
+    <talend.job.id>_Tawe0K6mEeiX4fgsa5j7GQ</talend.job.id>
     <talend.project.id>0</talend.project.id>
     <talend.job.framework></talend.job.framework>
     <talend.job.type>Standard</talend.job.type>
@@ -42,58 +42,8 @@
   <dependencies>
     <dependency>
       <groupId>org.talend.libraries</groupId>
-      <artifactId>activemq-all-5.15.2.tesb1</artifactId>
-      <version>6.0.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>aopalliance-1.0</artifactId>
-      <version>6.4.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>camel-blueprint-2.20.1</artifactId>
-      <version>6.0.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
       <artifactId>camel-core-2.20.1</artifactId>
       <version>6.0.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>camel-ftp-2.20.1</artifactId>
-      <version>6.0.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>camel-jms-2.20.1</artifactId>
-      <version>6.0.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>camel-jsch-0.1.53</artifactId>
-      <version>6.0.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>camel-spring-2.20.1</artifactId>
-      <version>6.0.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>camel-talendjob-7.0.1</artifactId>
-      <version>6.0.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>commons-net-3.3</artifactId>
-      <version>6.4.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>commons-pool2-2.4.2</artifactId>
-      <version>6.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
@@ -102,8 +52,13 @@
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
-      <artifactId>geronimo-jms_1.1_spec-1.1.1</artifactId>
-      <version>6.3.0</version>
+      <artifactId>jakarta-oro-2.0.8</artifactId>
+      <version>6.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>jsch-0.1.53</artifactId>
+      <version>6.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
@@ -112,8 +67,8 @@
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
-      <artifactId>org.apache.commons.logging_1.2.0</artifactId>
-      <version>6.0.0-SNAPSHOT</version>
+      <artifactId>mysql-connector-java-5.1.30-bin</artifactId>
+      <version>6.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
@@ -132,58 +87,18 @@
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
-      <artifactId>spring-aop-4.3.10.RELEASE</artifactId>
-      <version>6.0.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>spring-beans-4.3.10.RELEASE</artifactId>
-      <version>6.0.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>spring-context-4.3.10.RELEASE</artifactId>
-      <version>6.0.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>spring-core-4.3.10.RELEASE</artifactId>
-      <version>6.0.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>spring-expression-4.3.10.RELEASE</artifactId>
-      <version>6.0.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>spring-jms-4.3.10.RELEASE</artifactId>
-      <version>6.0.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>spring-messaging-4.3.10.RELEASE</artifactId>
-      <version>6.0.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>spring-tx-4.3.10.RELEASE</artifactId>
-      <version>6.0.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
       <artifactId>talend_file_enhanced_20070724</artifactId>
+      <version>6.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>talendcsv</artifactId>
       <version>6.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.example.ap1_poc.code</groupId>
       <artifactId>routines</artifactId>
       <version>7.0.1</version>
-    </dependency>
-    <dependency>
-      <groupId>org.example.ap1_poc.job</groupId>
-      <artifactId>Web_POSS_FTP</artifactId>
-      <version>0.1.0</version>
     </dependency>
   </dependencies>
   <build>
@@ -321,9 +236,6 @@
     </profile>
     <profile>
       <id>include-running-log4j</id>
-      <activation>
-        <activeByDefault>true</activeByDefault>
-      </activation>
       <properties>
         <log4j.running.dir>${current.resources.dir}/</log4j.running.dir>
       </properties>

@@ -27,6 +27,27 @@
           </execution>
         </executions>
       </plugin>
+      <plugin>
+        <artifactId>maven-install-plugin</artifactId>
+        <version>2.5.1</version>
+        <executions>
+          <execution>
+            <id>install-jar-lib</id>
+            <phase>validate</phase>
+            <goals>
+              <goal>install-file</goal>
+            </goals>
+            <configuration>
+              <groupId>org.example.ap1_poc.route</groupId>
+              <artifactId>Web_POSS_FTP_Post_Web_POSS_FTP</artifactId>
+              <version>0.1.0</version>
+              <packaging>jar</packaging>
+              <file>../../../process/AP1_POC/AP1_POC/web_poss_ftp_0.1/target/web_poss_ftp_0_1.jar</file>
+              <generatePom>true</generatePom>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
     </plugins>
   </build>
 </project>
