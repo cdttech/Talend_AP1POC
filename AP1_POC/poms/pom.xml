@@ -11,7 +11,6 @@
   <modules>
     <module>code/routines</module>
     <module>jobs/process/demo/onboardingdemojob_0.1</module>
-    <module>jobs/process/AP1_POC/webpossprovider_0.1</module>
     <module>jobs/process/AP1_POC/webpossconsumer_0.1</module>
     <module>jobs/process/AP1_POC/trans_details_provider_0.1</module>
     <module>jobs/process/AP1_POC/datapax_scanbpprovider_0.1</module>
@@ -19,7 +18,6 @@
     <module>jobs/process/AP1_POC/data_pax_external_provider_0.1</module>
     <module>jobs/process/AP1_POC/product_provider_0.1</module>
     <module>code/beans</module>
-    <module>jobs/process/AP1_POC/webpossprovider_0.2</module>
     <module>jobs/routes/AP1_POC/web_poss_ftp_post_0.1</module>
     <module>jobs/process/AP1_POC/webposs/web_poss_ftp_0.1</module>
     <module>jobs/process/AP1_POC/webposs/getwebpossbycodeofitem_0.1</module>
@@ -51,6 +49,8 @@
     <module>jobs/process/AP1_POC/CPMS/hq_cpms_post_0.2</module>
     <module>jobs/process/AP1_POC/FIDS/hq_fids_post_0.1</module>
     <module>jobs/process/AP1_POC/FIDS/hq_fids_post_0.2</module>
+    <module>jobs/process/AP1_POC/webposs/webpossprovider_0.1</module>
+    <module>jobs/process/AP1_POC/webposs/webpossprovider_0.2</module>
   </modules>
   <properties>
     <talend.project.name>AP1_POC</talend.project.name>
