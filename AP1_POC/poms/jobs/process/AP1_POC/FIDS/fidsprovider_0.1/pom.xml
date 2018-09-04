@@ -6,31 +6,31 @@
     <groupId>org.example.ap1_poc</groupId>
     <artifactId>code.Master</artifactId>
     <version>7.0.1</version>
-    <relativePath>../../../../</relativePath>
+    <relativePath>../../../../../</relativePath>
   </parent>
   <groupId>org.example.ap1_poc.service</groupId>
   <artifactId>FIDSProvider</artifactId>
-  <version>0.2.0-SNAPSHOT</version>
-  <name>AP1_POC FIDSProvider-0.2.0-SNAPSHOT (0.2,Job Designs)</name>
+  <version>0.1.0-SNAPSHOT</version>
+  <name>AP1_POC FIDSProvider-0.1.0-SNAPSHOT (0.1,Job Designs)</name>
   <properties>
     <output.resources.dir>${talend.job.name}/src/main/resources</output.resources.dir>
     <talend.job.applyContextToChildren>false</talend.job.applyContextToChildren>
     <current.test.resources.dir>${basedir}/src/test/resources</current.test.resources.dir>
     <current.int-resources.dir>${basedir}/src/main/resources</current.int-resources.dir>
-    <talend.job.version>0.2</talend.job.version>
+    <talend.job.version>0.1</talend.job.version>
     <talend.project.name.lowercase>ap1_poc</talend.project.name.lowercase>
-    <talend.job.path>ap1_poc/fidsprovider_0_2</talend.job.path>
+    <talend.job.path>ap1_poc/fidsprovider_0_1</talend.job.path>
     <maven.build.timestamp.format>yyyy-MM-dd HHmmssSSS</maven.build.timestamp.format>
     <talend.project.name>AP1_POC</talend.project.name>
     <talend.product.version>7.0.1.20180411_1414</talend.product.version>
-    <talend.job.finalName>fidsprovider_0_2</talend.job.finalName>
+    <talend.job.finalName>fidsprovider_0_1</talend.job.finalName>
     <talend.pigudf.groupid>org.example.ap1_poc.pigudf</talend.pigudf.groupid>
     <talend.routine.groupid>org.example.ap1_poc.code</talend.routine.groupid>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
-    <talend.job.jvmargs>-Xms256M -Xmx1024M -Dfile.encoding=UTF-8 </talend.job.jvmargs>
+    <talend.job.jvmargs>-Xms256M -Xmx1024M -Dfile.encoding=UTF-8</talend.job.jvmargs>
+    <talend.job.stat>true</talend.job.stat>
     <talend.project.branch>master</talend.project.branch>
     <talend.job.context>Default</talend.job.context>
-    <talend.job.stat>true</talend.job.stat>
     <talend.job.date>${maven.build.timestamp}</talend.job.date>
     <current.resources.dir>${basedir}/src/main/ext-resources</current.resources.dir>
     <talend.job.name>FIDSProvider</talend.job.name>
@@ -40,11 +40,6 @@
     <talend.job.type>Standard</talend.job.type>
   </properties>
   <dependencies>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>activemq-client-5.14.5</artifactId>
-      <version>6.3.0</version>
-    </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
       <artifactId>aopalliance-1.0</artifactId>
@@ -157,23 +152,8 @@
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
-      <artifactId>geronimo-j2ee-management_1.1_spec-1.0.1</artifactId>
-      <version>6.3.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>geronimo-jms_1.1_spec-1.1.1</artifactId>
-      <version>6.3.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
       <artifactId>guava</artifactId>
       <version>6.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>hawtbuf-1.11</artifactId>
-      <version>6.3.0</version>
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
@@ -342,17 +322,7 @@
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
-      <artifactId>slf4j-api-1.7.16</artifactId>
-      <version>6.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
       <artifactId>slf4j-api-1.7.5</artifactId>
-      <version>6.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>slf4j-log4j12-1.7.16</artifactId>
       <version>6.0.0</version>
     </dependency>
     <dependency>
@@ -541,8 +511,8 @@
       </activation>
       <properties>
         <templates.dir>${basedir}/src/main/templates/</templates.dir>
-        <poms.dir>${basedir}</poms.dir>
         <assemblies.dir>${basedir}/src/main/assemblies/</assemblies.dir>
+        <poms.dir>${basedir}</poms.dir>
       </properties>
     </profile>
     <profile>
@@ -562,8 +532,8 @@
       <properties>
         <talend.pigudf.excludes.set>org.talend.pigudf.${talend.project.name.lowercase}:*</talend.pigudf.excludes.set>
         <talend.libraries.excludes.set>${talend.libraries.includes.set}</talend.libraries.excludes.set>
-        <talend.code.excludes.set>org.talend.code.${talend.project.name.lowercase}:*</talend.code.excludes.set>
         <talend.jobs.excludes.set>${project.groupId}:*</talend.jobs.excludes.set>
+        <talend.code.excludes.set>org.talend.code.${talend.project.name.lowercase}:*</talend.code.excludes.set>
         <talend.libraries.includes.set>org.talend.libraries:*</talend.libraries.includes.set>
         <current.job.binaries.include>${project.groupId}:${project.artifactId}:${project.version}</current.job.binaries.include>
       </properties>
