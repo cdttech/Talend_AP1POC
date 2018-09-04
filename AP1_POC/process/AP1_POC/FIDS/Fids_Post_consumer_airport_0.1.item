@@ -111,11 +111,11 @@
     <elementParameter field="EXTERNAL" name="OAS_IMPORT" value=""/>
     <elementParameter field="TEXT" name="REST_ENDPOINT" value="&quot;http://192.168.254.180:8042/fidsairportconsumer&quot;"/>
     <elementParameter field="TABLE" name="SCHEMAS">
-      <elementValue elementRef="SCHEMA" value="airportconsumer"/>
-      <elementValue elementRef="HTTP_VERB" value="GET"/>
+      <elementValue elementRef="SCHEMA" value="fidsconsumer"/>
+      <elementValue elementRef="HTTP_VERB" value="POST"/>
       <elementValue elementRef="URI_PATTERN" value="&quot;/&quot;"/>
-      <elementValue elementRef="CONSUMES" value="NONE"/>
-      <elementValue elementRef="PRODUCES" value="XML-JSON"/>
+      <elementValue elementRef="CONSUMES" value="JSON"/>
+      <elementValue elementRef="PRODUCES" value="JSON"/>
       <elementValue elementRef="STREAMING" value="false"/>
     </elementParameter>
     <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
@@ -140,7 +140,9 @@
       <column defaultValue="" key="false" length="0" name="status" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column defaultValue="" key="false" length="1024" name="error" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
-    <metadata connector="FLOW" label="airportconsumer" name="airportconsumer"/>
+    <metadata connector="FLOW" label="airportconsumer" name="fidsconsumer">
+      <column comment="" key="false" length="-1" name="body" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
   </node>
   <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFlowToIterate_1"/>
@@ -311,9 +313,14 @@
       <column defaultValue="" key="false" length="0" name="body" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <connection connectorName="FLOW" label="airportconsumer" lineStyle="0" metaname="airportconsumer" offsetLabelX="0" offsetLabelY="0" source="tRESTRequest_1" target="tFlowToIterate_1">
+  <connection connectorName="FLOW" label="fidsconsumer" lineStyle="0" metaname="fidsconsumer" offsetLabelX="0" offsetLabelY="0" source="tRESTRequest_1" target="tFlowToIterate_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="body"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="airportconsumer"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="fidsconsumer"/>
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFlowToIterate_1" offsetLabelX="0" offsetLabelY="0" source="tFlowToIterate_1" target="tRESTClient_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
@@ -345,13 +352,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_628ba6a7-491d-457e-bb2e-1e4472155f8d"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wo4dHinzCnfQSFgn7Det6S92pW57accTSyaYqiMkGk02jw5zz+39bTKExpHgKpfntShZ307nFXdN
-wfPEc37tbQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_32d44543-344f-4b99-a466-cb9d98694eff"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>FrJctQ7oyU1XtCySuVYU+96Cd4GSAd3m4IlVCrrnqvKikV64OAWklXcuOKEAUio2v2oe7Hwzddg9
-nT/1ClRAkA==</DigestValue></Reference></SignedInfo><SignatureValue>0vNo/D/I4vWBXfsQ+rM+ZK3s7n1PHAANIbru89HCZipvqy7tiYf924KRHs5oqNrLPziazK30f15a
-PxeLCeiNAt2smMO8qOUIr6gHdbdKPrMQd2IecVo/pGqY09tdDk8zPWXjLXwRNfcs1Auxj0F+o8v3
-hNeSbTdnPoE7XVgPRwjC8nizOKn19nmnBeP1COagGjGv9+A/yyUkm1rdarpFcpfX5Ef9D7Iel2Fe
-bLPXhimVD5euST73X35rWKVZ3mOrInPZeWIUbbvzptfVE5KMHkelLhTr7gkEpHjO0fLVQ66n+0JU
-BkDnEBVmF81ZnQ9l3L5YneR6H+m05Tbon2dHRA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_9a4e1403-8982-4b71-9ecd-447b84309bc8"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>GOjNSTkRM6qBh9woORrazPGtsCh3tTKa5jihqL49Arpf2WuyiBXVa0VsyIbJok8vWIvjEVUl6v4/
+s8j7naSFfw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_494cc7f6-4c76-42df-b407-122e1bd8ecde"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>9h6xMxYS+XYv9hYzjbLMeamxKtpVs95f/HIKrFLf46UAjhflxJyBGtbQIwEKTyyissOeor+GIVe2
+PbUSUDrAJA==</DigestValue></Reference></SignedInfo><SignatureValue>NjRl2EDqBk7QLlkv/yQ7+id3edvEG6Jxy3jQOtr7FPZy0um59jVVpjLHkLLhcMDXBZMciIn7rYRy
+2L9+4/EHgEeMq86NjlRP+8pHzLRpj4hh68nTwC70zPJV+Rjc+Nl8vtdnjvPpkVk8QbNnrRrYbT68
+1mZ7setsA7FRA0ZfQv+DrJ4Mb5vAcmSODPqgGwEvvQ8m6VJqHNx5g8MUkELm4o4zTg3ZVRfzT8M6
+AgOqWqQt0Np4MFpoC3GC93yxf589QKVByvYhpaMYfUMCaAVIWFWFN1KwnvluQBviiAKsGCXLHTC5
+HSMGpIWTdXwSWcGHQO/bLSYlKYW6E/yrx/b/iQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -375,4 +382,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_32d44543-344f-4b99-a466-cb9d98694eff" Target="#_628ba6a7-491d-457e-bb2e-1e4472155f8d"><Timestamp>2018-09-04 13:30:53</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_494cc7f6-4c76-42df-b407-122e1bd8ecde" Target="#_9a4e1403-8982-4b71-9ecd-447b84309bc8"><Timestamp>2018-09-04 13:32:42</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
