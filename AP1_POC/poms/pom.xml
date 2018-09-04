@@ -49,8 +49,8 @@
     <module>jobs/process/AP1_POC/POTS/potsprovider_0.2</module>
     <module>jobs/process/AP1_POC/SIOPSKON/siopskonprovider_0.1</module>
     <module>jobs/process/AP1_POC/SIOPSKON/siopskonprovider_0.2</module>
-    <module>jobs/process/demo/hq_cpms_post_0.1</module>
-    <module>jobs/process/demo/hq_cpms_post_0.2</module>
+    <module>jobs/process/AP1_POC/CPMS/hq_cpms_post_0.1</module>
+    <module>jobs/process/AP1_POC/CPMS/hq_cpms_post_0.2</module>
   </modules>
   <properties>
     <talend.project.name>AP1_POC</talend.project.name>
