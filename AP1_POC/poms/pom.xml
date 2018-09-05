@@ -64,6 +64,7 @@
     <module>jobs/routes/AP1_POC/CPMS_DB/cpms_db_lookup_0.1</module>
     <module>jobs/process/AP1_POC/Error_Handling/error_demo_publisher_0.1</module>
     <module>jobs/process/AP1_POC/Error_Handling/error_demo_consumer_success_0.1</module>
+    <module>jobs/process/AP1_POC/Error_Handling/error_demo_consumer_failed_0.1</module>
   </modules>
   <properties>
     <talend.project.name>AP1_POC</talend.project.name>
