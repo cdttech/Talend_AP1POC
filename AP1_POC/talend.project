@@ -870,6 +870,24 @@
       <relatedItems xmi:id="_wy4AqrEdEeitWp5WD3VM5Q" id="TalendDate" version="Latest" type="routine"/>
       <relatedItems xmi:id="_wy4Aq7EdEeitWp5WD3VM5Q" id="Mathematical" version="Latest" type="routine"/>
     </ItemsRelations>
+    <ItemsRelations xmi:id="_a0igELEoEeitWp5WD3VM5Q">
+      <baseItem xmi:id="_a0igEbEoEeitWp5WD3VM5Q" id="_WiXgQLEoEeitWp5WD3VM5Q" version="0.1" type="job"/>
+      <relatedItems xmi:id="_a0igErEoEeitWp5WD3VM5Q" id="SQLike" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_a0igE7EoEeitWp5WD3VM5Q" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_a0igFLEoEeitWp5WD3VM5Q" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_a0igFbEoEeitWp5WD3VM5Q" id="DataMasking" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_a0igFrEoEeitWp5WD3VM5Q" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_a0igF7EoEeitWp5WD3VM5Q" id="DqStringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_a0igGLEoEeitWp5WD3VM5Q" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_a0igGbEoEeitWp5WD3VM5Q" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_a0igGrEoEeitWp5WD3VM5Q" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_a0igG7EoEeitWp5WD3VM5Q" id="DataQuality" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_a0igHLEoEeitWp5WD3VM5Q" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_a0igHbEoEeitWp5WD3VM5Q" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_a0igHrEoEeitWp5WD3VM5Q" id="DQTechnical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_a0igH7EoEeitWp5WD3VM5Q" id="DataQualityDependencies" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_a0igILEoEeitWp5WD3VM5Q" id="TalendStringUtil" version="Latest" type="routine"/>
+    </ItemsRelations>
     <deletedFolders>process/AP1_POC/AP1_POC/getByID</deletedFolders>
     <deletedFolders>process/AP1_POC/AP1_POC</deletedFolders>
     <migrationTask xmi:id="_Ay_rAKRJEei2LLUT3N3rjQ" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
