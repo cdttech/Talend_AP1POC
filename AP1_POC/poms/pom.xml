@@ -53,6 +53,7 @@
     <module>jobs/process/AP1_POC/webposs/webpossprovider_0.2</module>
     <module>jobs/process/AP1_POC/FIDS/fids_post_consumer_airport_0.1</module>
     <module>jobs/process/AP1_POC/CPMS/cpms_post_consumer_0.1</module>
+    <module>jobs/process/AP1_POC/CPMS/cpms_db_inserts_0.1</module>
   </modules>
   <properties>
     <talend.project.name>AP1_POC</talend.project.name>
