@@ -11,7 +11,6 @@
   <modules>
     <module>code/routines</module>
     <module>jobs/process/demo/onboardingdemojob_0.1</module>
-    <module>jobs/process/AP1_POC/webpossconsumer_0.1</module>
     <module>jobs/process/AP1_POC/trans_details_provider_0.1</module>
     <module>jobs/process/AP1_POC/datapax_scanbpprovider_0.1</module>
     <module>jobs/process/AP1_POC/datapax_ops_provider_0.1</module>
@@ -59,6 +58,7 @@
     <module>jobs/routes/AP1_POC/webposs/web_poss_ftp_post_0.1</module>
     <module>jobs/routes/AP1_POC/pots/pots_ftp_post_0.2</module>
     <module>jobs/process/AP1_POC/SIOPSKON/siopskom_post_consumer_0.1</module>
+    <module>jobs/process/AP1_POC/webposs/webpossconsumer_0.1</module>
   </modules>
   <properties>
     <talend.project.name>AP1_POC</talend.project.name>
