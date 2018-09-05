@@ -42,7 +42,7 @@
               <artifactId>Web_POSS_FTP_Post_Web_POSS_FTP</artifactId>
               <version>0.1.0</version>
               <packaging>jar</packaging>
-              <file>../../../process/AP1_POC/AP1_POC/web_poss_ftp_0.1/target/web_poss_ftp_0_1.jar</file>
+              <file>../../../../process/AP1_POC/webposs/web_poss_ftp_0.1/target/web_poss_ftp_0_1.jar</file>
               <generatePom>true</generatePom>
             </configuration>
           </execution>
