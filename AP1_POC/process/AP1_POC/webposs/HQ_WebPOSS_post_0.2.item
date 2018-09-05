@@ -262,12 +262,12 @@
   </node>
   <node componentName="tExtractJSONFields" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="448" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tExtractJSONFields_1"/>
-    <elementParameter field="CLOSED_LIST" name="READ_BY" value="XPATH"/>
-    <elementParameter field="CLOSED_LIST" name="JSON_PATH_VERSION" show="false" value="2_1_0"/>
+    <elementParameter field="CLOSED_LIST" name="READ_BY" value="JSONPATH"/>
+    <elementParameter field="CLOSED_LIST" name="JSON_PATH_VERSION" value="2_1_0"/>
     <elementParameter field="PREV_COLUMN_LIST" name="JSONFIELD" value="body"/>
-    <elementParameter field="TEXT" name="LOOP_QUERY" value="&quot;/data&quot;"/>
-    <elementParameter field="TEXT" name="JSON_LOOP_QUERY" show="false" value="&quot;*&quot;"/>
-    <elementParameter field="TABLE" name="MAPPING">
+    <elementParameter field="TEXT" name="LOOP_QUERY" show="false" value="&quot;/data&quot;"/>
+    <elementParameter field="TEXT" name="JSON_LOOP_QUERY" value="&quot;$.data[*]&quot;"/>
+    <elementParameter field="TABLE" name="MAPPING" show="false">
       <elementValue elementRef="SCHEMA_COLUMN" value="Transaction_Number"/>
       <elementValue elementRef="QUERY" value="&quot;Transaction_Number&quot;"/>
       <elementValue elementRef="NODECHECK" value="false"/>
@@ -385,71 +385,71 @@
       <elementValue elementRef="NODECHECK" value="false"/>
       <elementValue elementRef="ISARRAY" value="false"/>
     </elementParameter>
-    <elementParameter field="TABLE" name="MAPPING_4_JSONPATH" show="false">
+    <elementParameter field="TABLE" name="MAPPING_4_JSONPATH">
       <elementValue elementRef="SCHEMA_COLUMN" value="Transaction_Number"/>
-      <elementValue elementRef="QUERY" value="&quot;$id&quot;"/>
+      <elementValue elementRef="QUERY" value="&quot;Transaction_Number&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Shop_Type"/>
-      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="QUERY" value="&quot;Shop_Type&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Flight_No"/>
-      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="QUERY" value="&quot;Flight_No&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Airport_Destination"/>
-      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="QUERY" value="&quot;Airport_Destination&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Nationality"/>
-      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="QUERY" value="&quot;Nationality&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Transaction_Date"/>
-      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="QUERY" value="&quot;Transaction_Date&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Type"/>
-      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="QUERY" value="&quot;Type&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Username"/>
-      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="QUERY" value="&quot;Username&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Transaction_Type"/>
-      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="QUERY" value="&quot;Transaction_Type&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Item_Category"/>
-      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="QUERY" value="&quot;Item_Category&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Code_og_Item_Group"/>
-      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="QUERY" value="&quot;Code_og_Item_Group&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Name_of_Item_Description"/>
-      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="QUERY" value="&quot;Name_of_Item_Description&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Code_of_Item"/>
-      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="QUERY" value="&quot;Code_of_Item&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Barcode_of_Item"/>
-      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="QUERY" value="&quot;Barcode_of_Item&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Unit_Price_exclude_Tax"/>
-      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="QUERY" value="&quot;Unit_Price_exclude_Tax&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Quantity_of_Item"/>
-      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="QUERY" value="&quot;Quantity_of_Item&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="UOM"/>
-      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="QUERY" value="&quot;UOM&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Currency"/>
-      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="QUERY" value="&quot;Currency&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Line_Unit_Discount__FCY_"/>
-      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="QUERY" value="&quot;Line_Unit_Discount__FCY_&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Line_Amount_exc_Tax__FCY_"/>
-      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="QUERY" value="&quot;Line_Amount_exc_Tax__FCY_&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Line_Vat_Amount__FCY_"/>
-      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="QUERY" value="&quot;Line_Vat_Amount__FCY_&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Line_Tax_Amount__FCY_"/>
-      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="QUERY" value="&quot;Line_Tax_Amount__FCY_&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Total_Discount_amount__LCY_"/>
-      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="QUERY" value="&quot;Total_Discount_amount__LCY_&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Total_VAT_Amount_LCY_"/>
-      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="QUERY" value="&quot;Total_VAT_Amount_LCY_&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Total_Service_Charge_amount_LCY_"/>
-      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="QUERY" value="&quot;Total_Service_Charge_amount_LCY_&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Total_Tax_amount_LCY__Local_Currency_"/>
-      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="QUERY" value="&quot;Total_Tax_amount_LCY__Local_Currency_&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Transaction_amount_LCY__Local_Currency_"/>
-      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="QUERY" value="&quot;Transaction_amount_LCY__Local_Currency_&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Rate"/>
-      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="QUERY" value="&quot;Rate&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Poss_ID"/>
-      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="QUERY" value="&quot;Poss_ID&quot;"/>
     </elementParameter>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="DESTINATION" show="false" value="tExtractJSONFields_1"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="UTF-8"/>
     <elementParameter field="CHECK" name="SPLIT_LIST" show="false" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="req" name="tExtractJSONFields_1">
@@ -1897,13 +1897,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_155fdd31-9149-4650-a176-bf571bcfff5a"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>GcbB8rn0+xDgsTBOpGPPhJGIunOaM1/O59rFactb2SQr1Uj5bRlslxqMgNk0zdwp1lIy1zmSUfis
-nD2zWY/2NA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_8288e4a5-433f-4e1e-9b89-2da897bd815e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>O+h0Le6MIDhSzBKIJwrFJXxc4nrrvaUKQEf29xtCTnmkuJnKT3uO6XmK6ih8G1JOve3npBwD2M+I
-eYx7vYhgcQ==</DigestValue></Reference></SignedInfo><SignatureValue>06Ft+XSs+yS9WvV6xTXe+IRVr/Z9/p5lLNA3KnmFShAKV6txdT1zmNhjSvfbMDiP7JMuBdux26IF
-RUenmKP/unGALnQZKAGxW7Vzf3xOsA87GPBExF/gTXgBPAsZF0KP60KlJMuGMJ3gv1mUJ83uyYOg
-VAaU3ZCc0ylXVnSdVmJUNpzwj9S/SwhqGGYCdu8JZvcLHC30hc2qJhJwTFUZyN0yh/uu4IiBH1ej
-kEl/ZZlBlff5ZUikoBE9+PAXg0F7DNxxudD1kS8/PDnjrA654s7yldkvPmmydUZzlT1CzNRi04Kv
-L/VRkaS2SFo3LUCJcdlbsP2vNKrMNDjQ5E+M5g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_5a0eca2d-016c-45cc-bfde-cdfc0ffbf746"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>u+x9Z1GmJHL/d4W7wdXm4E3g85GPIwfTqf/+KuM3rxnXzngW0tIu64KOztqoAJv7sbPqWHo4I2W2
+NmzxR2ouog==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_1df191f5-67f2-4839-a46e-649a69178d2f"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>BFo6Jk8jgArxVZ+E0+5+kCRi9rv7tOYF34xd12RLEGRLr7UWyiizr/bHTK9zF6hAYprbZE6Mm1Iw
+gjvYQ1ec/w==</DigestValue></Reference></SignedInfo><SignatureValue>OtoH2YMgwU5StfuQojt6Z1QTtcRDg/9IxXGiogWiganqZtu2w7UeLK+zNZgeTeowqGu4tF3fD2A7
+RLuai+w6C8/sV/LnquUIPlM4iwubxfHHWVdAFsDf5nh80s1fbtXGXiFxXHEr0Yk1m/zoJcPSANNg
+p7mVUO/eNLTWfj7vk2OtRNypt5QqR0pe71dKwrtkUhYmtkiI1oo0pkyhuDskLFPkjEIrMJs9qRhk
+b4X4QF4VqAz7JcT1oaZTO7DYWjuUXTuYj+OKEfBxrWmHFL7zTMo47FSHnxyfGooqZR3PBGELVI/u
+9QPCN+N5Cm2i723aAJknJqViB2whx+hYGjZQuw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -1927,4 +1927,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_8288e4a5-433f-4e1e-9b89-2da897bd815e" Target="#_155fdd31-9149-4650-a176-bf571bcfff5a"><Timestamp>2018-09-05 11:28:18</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_1df191f5-67f2-4839-a46e-649a69178d2f" Target="#_5a0eca2d-016c-45cc-bfde-cdfc0ffbf746"><Timestamp>2018-09-05 11:37:44</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
