@@ -202,7 +202,7 @@
     <elementParameter field="FILE" name="KEYSTORE_FILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="k0OOTVG4MsZpHb1iYbZyRw=="/>
     <elementParameter field="DIRECTORY" name="LOCALDIR" value="&quot;/tmp/ftp/pots&quot;"/>
-    <elementParameter field="TEXT" name="REMOTEDIR" value="&quot;/home/administrator/ftp/files/webposs&quot;"/>
+    <elementParameter field="TEXT" name="REMOTEDIR" value="&quot;/home/administrator/ftp/files/pots&quot;"/>
     <elementParameter field="CHECK" name="MOVE_TO_THE_CURRENT_DIRECTORY" value="true"/>
     <elementParameter field="CLOSED_LIST" name="MODE" show="false" value="ascii"/>
     <elementParameter field="CLOSED_LIST" name="OVERWRITE" show="false" value="never"/>
@@ -272,7 +272,7 @@
     <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="wiXuUBxiyoc5L4zXsOuoEQ=="/>
     <elementParameter field="FILE" name="KEYSTORE_FILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="k0OOTVG4MsZpHb1iYbZyRw=="/>
-    <elementParameter field="TEXT" name="REMOTEDIR" value="&quot;/home/administrator/ftp/files/webposs&quot;"/>
+    <elementParameter field="TEXT" name="REMOTEDIR" value="&quot;/home/administrator/ftp/files/pots&quot;"/>
     <elementParameter field="CHECK" name="MOVE_TO_THE_CURRENT_DIRECTORY" value="true"/>
     <elementParameter field="CHECK" name="PERL5_REGEX" value="false"/>
     <elementParameter field="TABLE" name="FILES">
@@ -299,7 +299,7 @@
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_1"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;/tmp/ftp/webposs/pots.csv&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;/tmp/ftp/pots/pots.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
@@ -1452,13 +1452,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_afc081b6-131d-41b2-9498-9e313a9d2f1e"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>+fe8d6egSH88Z1QKIHAqcB/FVObgZsS5fwX65t0INYUy9JhmxAJnfntn5QsWN8v3v0ClEqUSf2IW
-9L8+SteT9g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_ee43bd0c-7739-4622-aec0-7ded4cdbfcf3"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Oc8DgXqTgMLqC/9nf/DiyjrXhfAgEfzM8SgitaDDjrvpoSlc/QVUAI8+uII6/tTlDD9hpEbrhmZh
-k0C+rYjYSQ==</DigestValue></Reference></SignedInfo><SignatureValue>BKWaD1hIVBhNzoXMoOvV7EPFrMEGOkWv1ieBAIcvFKnDoE6vtYi8F9AD1DamYihiJqTh5Ovq+Qsa
-YeHMrLE510A+mKokDCoNrza6M+Z0URqsH2wAijQfjGe6uAtvLzPExyK25JlMdQqAzT8KHz11DiPV
-gDIwkU2g3dtpnmZW5r5o9e5ONF68l9PH2fZELzFc+BSe/cQEdGuNjxe/5V+0bDxHqZ/npay7ZMMd
-50X+cwP5KYe5XIKcy1XoQtH4t1yjNxUK61/D/3e2xTYPNY9BjOoGRw70m5+Z652VYDnTjYprVzmW
-YurF5j66PSyRC1QGM9fVQOW2OB0keC5MNZstCA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b64b6a15-081b-4d65-ad49-415a3d329ab6"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>SKnEuDJTyz4VIoTdrUJk37kMD5WDo3SK7Hf9xp3Gn6bwL8q7/2wsSgwXRf++Q3TcK/qGyjWUXRAC
+fCsV4WY07w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_d70d152f-c32d-44fe-84ae-b043f5010b26"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>FlQW4YoS0cddwqShBkkkCofdZocI+6gx+s+Vs8WFcR52jFs1mc6IUk9ImaXQlHy80yzTWOgCmLmk
+47oChWvtjw==</DigestValue></Reference></SignedInfo><SignatureValue>iVvrjZVeqf+77okfu8J6MrSpIZeiLdH73A0PmXgvtKpttRlNFt7LDhL3RF9WsXIgZxth/dRPPF6F
+N0Ad5OfmQzUPmQ7SSz2DzgzPrg6LnkS/yOGSeWaDgZZ3vRWiuBZ298tA2Xgvpo4+eGGv5nQk6tmm
+z7io5OM1rIcnBywT8szks7ARB0/nMNkEbzMcC8Ew+JlSEFN1ePW87h5MkHlGYDNgts6V7uRXu7du
+6wBuZl7dQ52TzvSEuWJtByRncPKC/EMjzCOLDNTjP9qP1ECZeCj8hnWwbAvnW9yap+4I849jJTIE
+f14wFoDEgutQmEh0nv7I7kzfHWy6neE/4CNmUg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -1482,4 +1482,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_ee43bd0c-7739-4622-aec0-7ded4cdbfcf3" Target="#_afc081b6-131d-41b2-9498-9e313a9d2f1e"><Timestamp>2018-09-05 07:48:52</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_d70d152f-c32d-44fe-84ae-b043f5010b26" Target="#_b64b6a15-081b-4d65-ad49-415a3d329ab6"><Timestamp>2018-09-05 07:49:53</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
