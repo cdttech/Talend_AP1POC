@@ -4,9 +4,9 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.example.ap1_poc.route</groupId>
   <artifactId>POTS_FTP_Post-Feature</artifactId>
-  <version>0.2.0-SNAPSHOT</version>
+  <version>0.2.0</version>
   <packaging>pom</packaging>
-  <name>AP1_POC POTS_FTP_Post-0.2.0-SNAPSHOT (0.2,Routes) Feature</name>
+  <name>AP1_POC POTS_FTP_Post-0.2.0 (0.2,Routes) Feature</name>
   <build>
     <plugins>
       <plugin>
