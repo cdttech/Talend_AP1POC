@@ -182,7 +182,7 @@
     </dependency>
     <dependency>
       <groupId>org.example.ap1_poc.job</groupId>
-      <artifactId>Web_POSS_FTP</artifactId>
+      <artifactId>POTS_FTP</artifactId>
       <version>0.1.0</version>
     </dependency>
   </dependencies>
