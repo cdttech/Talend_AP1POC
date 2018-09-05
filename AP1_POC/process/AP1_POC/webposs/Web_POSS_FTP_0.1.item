@@ -811,6 +811,7 @@
     <elementParameter field="CHECK" name="ON_DUPLICATE_KEY_UPDATE" show="false" value="false"/>
     <elementParameter field="TABLE" name="DUPLICATED_KEYS" show="false"/>
     <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="AP1_HQ"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="out" name="tMysqlOutput_1">
       <column comment="" key="false" length="200" name="Transaction_Number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -877,12 +878,12 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFTPClose" componentVersion="2.0" offsetLabelX="0" offsetLabelY="0" posX="192" posY="448">
+  <node componentName="tFTPClose" componentVersion="2.0" offsetLabelX="0" offsetLabelY="0" posX="192" posY="544">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFTPClose_1"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tFTPConnection_1"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="576">
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="672">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFixedFlowInput_1"/>
     <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
     <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
@@ -907,7 +908,7 @@
       <column comment="" key="false" length="-1" name="Result_Error" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="384" posY="576">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="384" posY="672">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_2"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -939,7 +940,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tRouteOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="672" posY="576">
+  <node componentName="tRouteOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="672" posY="672">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRouteOutput_1"/>
     <elementParameter field="TABLE" name="VALUES">
       <elementValue elementRef="SCHEMA_COLUMN" value="Result_Code"/>
@@ -957,7 +958,7 @@
       <column comment="" key="false" length="-1" name="Result_Message" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="320">
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="416">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFixedFlowInput_2"/>
     <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
     <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
@@ -982,7 +983,7 @@
       <column comment="" key="false" length="-1" name="createdby" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="320">
+  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="416">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMysqlOutput_2"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
@@ -1164,13 +1165,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_cdd39eb9-f18b-4f0c-aef0-2d7298d57355"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>QvXUftj8MucHRpIXahjQFIoN/S5tEbgXIojhxBK7QhWIOYrZG3C8rhmrGmi3GzCnHk0LMxJx6GpP
-iU5pTyZP4g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_42f74a56-5706-42a3-b86d-267705a32ced"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>yoLnRjdbF5n9U8zfSlXc3MVoGOyn45g2xTrQPxcnAid2mu3fPXcmMft5ts+j6bOOCPKn0IDfl6NC
-L3FpAlZwrw==</DigestValue></Reference></SignedInfo><SignatureValue>kY+wL974wkubROteoGp+fYJTLqpFnucVgfS3u/jnZF0BIkjsKrzQRZQlKWQ4ahKnA3qPqpP1aNkY
-GFaV/JqvedqoNp2ZUQPJ5qLn+VZFZtc00aFHuKiW/ycysxTQbqtueSM1O3NpbHhr79drkzt2F5/K
-wXO3B7fNpdzF88fh13FOBf94BMm36/5heJjmT5rUZSLWWMkPoEDZ++RQT1hfQAuHoZeFlVGTrmox
-DbtoeEv3ry/LQRtWYyGbC/DySJpSo5J46Yg3XP1kex8AbKgSjjDuBYwy6NED2rs6YIOCsc/y4I1Q
-Brs/mpi8Jv+kPICvemXvXMNjfCGksOIgtXnS4w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_75bb61d2-cf1e-44a5-9df6-ca3bceeb4916"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>pLG/6PwGdkA1kx+Fe9zCjJbIIbglAUQ1B2JyXr61h1ehH9+9rlUz9D5S4Cscs8trO0urIDcCe6YF
+47UAZvdMLA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_87ddf421-73fc-4be1-91a6-fac937adbea9"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Mlz38hkOOV+SQN7Si9w8tK8BQAlAHJ9ae1nKIiz1uWzsDOy8+XfsZ0tlPinbcx/hOzRbXxhIvXhj
+lFpzfkuG3g==</DigestValue></Reference></SignedInfo><SignatureValue>g+yC7kosOEugBCpjrfTwXqkXqej8rqnPSEGm9icsAWn9sw6d5RXvjyCt/ZkJsqr0ZYtPxuC3NM+V
+Lt0UJnICJ7cNIPOxiiFQEoxblb0Wqub5GhFA3er6iauPn6ERILoNjr15o7vmSewblbB6MMQyAuuo
+8Qxcu7qr8+CErSntTmj3eOuBuuMygQ4iE7b4ITaxBrt5fxq1OKaKMUmoRLgh/Ihuzw6NXT4EFHCy
+kbCwv03p5Eaedt66nx5wG4X0GlDZ27P98BUfY414i2SWqJI7YdYGvN/lOQ9m1JdKXsfiGfnAKF4V
+FtLr5p7FldIT2IqtNVZMcI+RLwGq4uDMAufTVg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -1194,4 +1195,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_42f74a56-5706-42a3-b86d-267705a32ced" Target="#_cdd39eb9-f18b-4f0c-aef0-2d7298d57355"><Timestamp>2018-09-04 13:12:45</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_87ddf421-73fc-4be1-91a6-fac937adbea9" Target="#_75bb61d2-cf1e-44a5-9df6-ca3bceeb4916"><Timestamp>2018-09-05 11:39:40</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
