@@ -133,48 +133,48 @@
   </node>
   <node componentName="tMomInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMomInput_1"/>
-    <elementParameter field="CHECK" name="KEEPLISTENING" value="false"/>
-    <elementParameter field="CHECK" name="STARTSERVER" show="false" value="false"/>
+    <elementParameter field="CHECK" name="KEEPLISTENING" value="true"/>
+    <elementParameter field="CHECK" name="STARTSERVER" value="false"/>
     <elementParameter field="CHECK" name="USEMAX" show="false" value="false"/>
     <elementParameter field="CHECK" name="USEMAX_WITH_TIMEOUT" show="false" value="false"/>
-    <elementParameter field="CHECK" name="USE_CONNECTION" value="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="CHECK" name="USE_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMomConnection_1"/>
     <elementParameter field="CHECK" name="FAILOVER" show="false" value="false"/>
     <elementParameter field="CHECK" name="STATIC" show="false" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_PARAM_FAILOVER" show="false" value="&quot;?randomize=false&quot;"/>
     <elementParameter field="TEXT" name="CONNECTION_PARAM_STATIC" show="false" value="&quot;?transport.maxReconnectDelay=5000&amp;transport.useExponentialBackOff=false&quot;"/>
     <elementParameter field="TEXT" name="TIMEOUT" show="false" value="1"/>
     <elementParameter field="TEXT" name="MAXMSG" show="false" value="1000"/>
-    <elementParameter field="CLOSED_LIST" name="SERVER" value="WebSphere"/>
+    <elementParameter field="CLOSED_LIST" name="SERVER" show="false" value="WebSphere"/>
     <elementParameter field="CHECK" name="USE_SSL" show="false" value="false"/>
     <elementParameter field="LABEL" name="USE_SSL_NOTE" show="false" value="Notice: You should use tSetKeysore or JVM arguments to specify keystore or truststore"/>
-    <elementParameter field="TEXT" name="SERVERADDRESS" value="&quot;localhost&quot;"/>
-    <elementParameter field="TEXT" name="SERVERPORT" value="&quot;1414&quot;"/>
+    <elementParameter field="TEXT" name="SERVERADDRESS" show="false" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="SERVERPORT" show="false" value="&quot;1414&quot;"/>
     <elementParameter field="TABLE" name="SERVERS" show="false"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE="/>
-    <elementParameter field="TEXT" name="FROM" show="false" value="&quot;&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="MSGTYPE" show="false" value="Topic"/>
-    <elementParameter field="TEXT" name="CHANNEL" value="&quot;DC.SVRCONN&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="MESSAGE_BODY_TYPE" value="Text"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="TEXT" name="FROM" value="&quot;errorHandlingQueue&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="MSGTYPE" value="Queue"/>
+    <elementParameter field="TEXT" name="CHANNEL" show="false" value="&quot;DC.SVRCONN&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="MESSAGE_BODY_TYPE" value="Map"/>
     <elementParameter field="CHECK" name="IS_TRANSACTED" show="false" value="false"/>
-    <elementParameter field="TEXT" name="QM" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="QUEUE" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="IS_USE_MESSAGE_ID" value="false"/>
+    <elementParameter field="TEXT" name="QM" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUEUE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="IS_USE_MESSAGE_ID" show="false" value="false"/>
     <elementParameter field="TEXT" name="MSG_ID" show="false" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="COMMIT" value="false"/>
-    <elementParameter field="CHECK" name="ROLLBACK" value="false"/>
-    <elementParameter field="CHECK" name="AUTO_BACKOUT" value="false"/>
+    <elementParameter field="CHECK" name="COMMIT" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ROLLBACK" show="false" value="false"/>
+    <elementParameter field="CHECK" name="AUTO_BACKOUT" show="false" value="false"/>
     <elementParameter field="TABLE" name="ADDITIONAL_OPTIONS" show="false"/>
-    <elementParameter field="CHECK" name="BROWSE" value="false"/>
+    <elementParameter field="CHECK" name="BROWSE" show="false" value="false"/>
     <elementParameter field="CLOSED_LIST" name="ACKNOWLEDGMENT_MODE" show="false" value="AUTO_ACKNOWLEDGE"/>
-    <elementParameter field="CHECK" name="GET_JMS_HEADER" show="false" value="false"/>
+    <elementParameter field="CHECK" name="GET_JMS_HEADER" value="false"/>
     <elementParameter field="TABLE" name="JMS_HEADERS" show="false"/>
-    <elementParameter field="CHECK" name="GET_JMS_PROPERTIES" show="false" value="false"/>
+    <elementParameter field="CHECK" name="GET_JMS_PROPERTIES" value="false"/>
     <elementParameter field="TABLE" name="JMS_PROPERTIES" show="false"/>
-    <elementParameter field="CHECK" name="GET_MQMD_FIELDS" value="false"/>
+    <elementParameter field="CHECK" name="GET_MQMD_FIELDS" show="false" value="false"/>
     <elementParameter field="TABLE" name="MQMD_FIELDS" show="false"/>
-    <elementParameter field="CHECK" name="USE_MQ_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="USE_MQ_HEADER" show="false" value="false"/>
     <elementParameter field="CHECK" name="USE_FIX_MQRFH2" show="false" value="false"/>
     <elementParameter field="TABLE" name="MQRFH2_FIXED_FIELD" show="false"/>
     <elementParameter field="CHECK" name="USE_MQRFH2_MCD" show="false" value="false"/>
@@ -183,13 +183,10 @@
     <elementParameter field="TABLE" name="MQRFH2_JMS_FIELD" show="false"/>
     <elementParameter field="CHECK" name="USE_MQRFH2_USR" show="false" value="false"/>
     <elementParameter field="TABLE" name="MQRFH2_USR_FIELD" show="false"/>
-    <elementParameter field="CHECK" name="SET_MQ_SSL_CIPHER" value="false"/>
+    <elementParameter field="CHECK" name="SET_MQ_SSL_CIPHER" show="false" value="false"/>
     <elementParameter field="CLOSED_LIST" name="MQ_SSL_CIPHER" show="false" value="SSL_RSA_WITH_NULL_MD5"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tMomInput_1">
-      <column defaultValue="" key="false" length="255" name="from" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="message" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
+    <metadata connector="FLOW" name="tMomInput_1"/>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
@@ -204,20 +201,12 @@
     <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
     <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
     <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
-    <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="from"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="message"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-    </elementParameter>
+    <elementParameter field="TABLE" name="LENGTHS" show="false"/>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="LABEL" value="data_from_queue"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tLogRow_1">
-      <column defaultValue="" key="false" length="255" name="from" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="message" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
+    <metadata connector="FLOW" name="tLogRow_1"/>
   </node>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMomConnection_1" offsetLabelX="0" offsetLabelY="0" source="tMomConnection_1" target="tMomInput_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
@@ -236,13 +225,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_81adb44f-c719-4be9-99ea-e5f1420ef391"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>8LOOZfPsh0jxsJ7dlpM7KdEIP4I43rRaGtJvIuIPxZDYZFd56F7KQ+E8OISzBy70eR8uuzrRQF3B
-8gLojwQg/w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_aeb49148-bf0d-4f00-a13e-8c744c03c457"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ZgqU75WMKjp4BJD0IPsSBOH4aYbyxfyIMo1RxLP4t6cctKJT3boGgtRtUWvomwQG4jGVtsXDTott
-DXjgd0QJrQ==</DigestValue></Reference></SignedInfo><SignatureValue>2liIhm8rW9uobDVNHe61VwwlkcOx60ENde5Fsyiis2ycA0VMqrOoaeOvFRfmGR6mRZYwgDPKrTp1
-Z/xcxJEIhcGmKctjZsyZI7EyMIn9T0EVg83OtCt0Ok/XKfZRuO8TND1g9qkyxH62ZneeBpJsLBZZ
-0CWS1LkyT9fGum7JRlAecd4MkXKJguV07FARJBxav8XY/Szg6EMZok7ESwy8i4mz9gqyXCkTJfjC
-HyHlOF0ZhtOP0XrDwo5J1Alg5h3Vn7F4fP6Y47RivPJIzM36HcifmWbR+h4PpALU0jtkpOPJftna
-Ip13hoo5aZiPPDAlMLSAsYZidU9Yu7Y73Fg7Bw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_629e18f3-a361-4087-bf8d-407af4f27a32"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>0rGWgoFc7ViuGTIA0l9Pfmw3d2NiE/fYYkad/sYOFWfPVJOkS9xYR82YdWxReTBgTC3m4bDdvzP5
+0jzIyvOrpw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_029913fb-b214-4423-9480-4c67bb9f1310"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>CaMlE12XrX6s4IQ4eqe+HFIjoBZ9aVfwsdvIQrfFeAZ+WvhyFSk1+H1ev1GL0DjDcv3pPmB5hXXv
+ndGpCjnnSA==</DigestValue></Reference></SignedInfo><SignatureValue>LsCsh115y6Nk6jIWzMTJxGFHxvcHnUR8C6os1pzgeRXpCYlPMHx0EbOpd8S7E+LHO4Hvj+UZMZLd
+DJwL8gV4FcalQmoxEPSite64Vaq2noYph/AOz6dRsr7cg6CmuH/BD8mRPM7kUiD28GJPSh9mgY/R
+2giHZtjhZL4GoTAgpkVEkxBw23IUqN5v140gqBGb9XNbTUw26Flk+2uHp1pOEbkji97DFR3pn94k
+6P/p7ZauRiyDynGPRkG36rU7dR7WWEh2bTUM47OFzliDOAWdBT4Fp/9th1lEOulTTjGxcXHPefx+
+O9U6NrPMKZDAvH4NYfejvkvZoGGn8PpWvtEsvA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -266,4 +255,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_aeb49148-bf0d-4f00-a13e-8c744c03c457" Target="#_81adb44f-c719-4be9-99ea-e5f1420ef391"><Timestamp>2018-09-05 17:56:19</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_029913fb-b214-4423-9480-4c67bb9f1310" Target="#_629e18f3-a361-4087-bf8d-407af4f27a32"><Timestamp>2018-09-05 18:12:53</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
