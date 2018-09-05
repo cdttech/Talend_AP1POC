@@ -583,8 +583,6 @@
     </ItemsRelations>
     <ItemsRelations xmi:id="_Y1AOAK0GEeiX4fgsa5j7GQ">
       <baseItem xmi:id="_Y1AOAa0GEeiX4fgsa5j7GQ" id="_FcIHgKelEeiqM5GTq2b6mw" version="0.2" type="job"/>
-      <relatedItems xmi:id="_Y1AOAq0GEeiX4fgsa5j7GQ" id="_YWZaAKaxEei2LLUT3N3rjQ" version="Latest" type="property"/>
-      <relatedItems xmi:id="_Y1AOA60GEeiX4fgsa5j7GQ" id="_iB1aAKawEei2LLUT3N3rjQ" version="Latest" type="property"/>
       <relatedItems xmi:id="_Y1AOBK0GEeiX4fgsa5j7GQ" id="SQLike" version="Latest" type="routine"/>
       <relatedItems xmi:id="_Y1AOBa0GEeiX4fgsa5j7GQ" id="Numeric" version="Latest" type="routine"/>
       <relatedItems xmi:id="_Y1AOBq0GEeiX4fgsa5j7GQ" id="Relational" version="Latest" type="routine"/>
