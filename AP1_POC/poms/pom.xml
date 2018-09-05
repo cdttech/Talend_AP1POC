@@ -57,6 +57,7 @@
     <module>jobs/process/AP1_POC/POTS/pots_ftp_0.1</module>
     <module>jobs/routes/AP1_POC/pots/pots_ftp_post_0.1</module>
     <module>jobs/routes/AP1_POC/webposs/web_poss_ftp_post_0.1</module>
+    <module>jobs/routes/AP1_POC/pots/pots_ftp_post_0.2</module>
   </modules>
   <properties>
     <talend.project.name>AP1_POC</talend.project.name>
