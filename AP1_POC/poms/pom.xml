@@ -61,6 +61,7 @@
     <module>jobs/process/AP1_POC/webposs/hq_webposs_post_0.3</module>
     <module>jobs/process/cpms_db_inserts_0.1</module>
     <module>jobs/process/AP1_POC/CPMS/cpms_db_post_0.1</module>
+    <module>jobs/routes/AP1_POC/CPMS_DB/cpms_db_lookup_0.1</module>
   </modules>
   <properties>
     <talend.project.name>AP1_POC</talend.project.name>
