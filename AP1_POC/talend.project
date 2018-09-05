@@ -693,7 +693,6 @@
     </ItemsRelations>
     <ItemsRelations xmi:id="_Tu0kEK0WEeiX4fgsa5j7GQ">
       <baseItem xmi:id="_Tu0kEa0WEeiX4fgsa5j7GQ" id="_enIpIKd-EeiJR_waBnMO0g" version="0.2" type="job"/>
-      <relatedItems xmi:id="_Tu0kEq0WEeiX4fgsa5j7GQ" id="_YWZaAKaxEei2LLUT3N3rjQ" version="Latest" type="property"/>
       <relatedItems xmi:id="_Tu0kE60WEeiX4fgsa5j7GQ" id="SQLike" version="Latest" type="routine"/>
       <relatedItems xmi:id="_Tu0kFK0WEeiX4fgsa5j7GQ" id="Numeric" version="Latest" type="routine"/>
       <relatedItems xmi:id="_Tu0kFa0WEeiX4fgsa5j7GQ" id="TalendString" version="Latest" type="routine"/>
