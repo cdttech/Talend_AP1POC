@@ -67,6 +67,7 @@
     <module>jobs/process/AP1_POC/Error_Handling_Queue/error_demo_consumer_failed_0.1</module>
     <module>jobs/process/AP1_POC/Error_Handling_Queue/error_demo_consumer_succeed_0.1</module>
     <module>jobs/process/AP1_POC/Error_Handling_Queue/error_demo_publisher1_0.1</module>
+    <module>jobs/process/AP1_POC/FIDS/hq_fids_post_0.3</module>
   </modules>
   <properties>
     <talend.project.name>AP1_POC</talend.project.name>
