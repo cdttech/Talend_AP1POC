@@ -72,6 +72,7 @@
     <module>jobs/process/AP1_POC/FIDS/hq_fids_post_0.4</module>
     <module>jobs/process/AP1_POC/FIDS/fids_post_consumer_airport_0.3</module>
     <module>jobs/process/AP1_POC/POTS/hq_pots_post_0.3</module>
+    <module>jobs/process/AP1_POC/CPMS/hq_cpms_post_0.3</module>
   </modules>
   <properties>
     <talend.project.name>AP1_POC</talend.project.name>
