@@ -975,6 +975,19 @@
       <relatedItems xmi:id="_7olQarGVEeiAr86ZVK3Shg" id="TalendDate" version="Latest" type="routine"/>
       <relatedItems xmi:id="_7olQa7GVEeiAr86ZVK3Shg" id="Mathematical" version="Latest" type="routine"/>
     </ItemsRelations>
+    <ItemsRelations xmi:id="_6JaHMLGWEeiAr86ZVK3Shg">
+      <baseItem xmi:id="_6JaHMbGWEeiAr86ZVK3Shg" id="_QUOesLBGEei_Af7PGwel1A" version="0.3" type="job"/>
+      <relatedItems xmi:id="_6JaHMrGWEeiAr86ZVK3Shg" id="SQLike" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_6JaHM7GWEeiAr86ZVK3Shg" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_6JaHNLGWEeiAr86ZVK3Shg" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_6JaHNbGWEeiAr86ZVK3Shg" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_6JaHNrGWEeiAr86ZVK3Shg" id="TalendStringUtil" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_6JaHN7GWEeiAr86ZVK3Shg" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_6JaHOLGWEeiAr86ZVK3Shg" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_6JaHObGWEeiAr86ZVK3Shg" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_6JaHOrGWEeiAr86ZVK3Shg" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_6JaHO7GWEeiAr86ZVK3Shg" id="Mathematical" version="Latest" type="routine"/>
+    </ItemsRelations>
     <deletedFolders>process/AP1_POC/AP1_POC/getByID</deletedFolders>
     <deletedFolders>process/AP1_POC/AP1_POC</deletedFolders>
     <deletedFolders>process/AP1_POC/Error_Handling</deletedFolders>
