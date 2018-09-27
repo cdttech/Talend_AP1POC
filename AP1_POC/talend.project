@@ -1016,6 +1016,25 @@
       <relatedItems xmi:id="_aoEo4MIoEeir2fIY1agOnQ" id="MDM" version="Latest" type="routine"/>
       <relatedItems xmi:id="_aoEo4cIoEeir2fIY1agOnQ" id="TalendStringUtil" version="Latest" type="routine"/>
     </ItemsRelations>
+    <ItemsRelations xmi:id="_-j4TYMIpEeir2fIY1agOnQ">
+      <baseItem xmi:id="_-j4TYcIpEeir2fIY1agOnQ" id="_0frDgMIpEeir2fIY1agOnQ" version="0.1" type="job"/>
+      <relatedItems xmi:id="_-j4TYsIpEeir2fIY1agOnQ" id="SQLike" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_-j4TY8IpEeir2fIY1agOnQ" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_-j4TZMIpEeir2fIY1agOnQ" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_-j4TZcIpEeir2fIY1agOnQ" id="DataMasking" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_-j4TZsIpEeir2fIY1agOnQ" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_-j4TZ8IpEeir2fIY1agOnQ" id="DqStringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_-j4TaMIpEeir2fIY1agOnQ" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_-j4TacIpEeir2fIY1agOnQ" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_-j4TasIpEeir2fIY1agOnQ" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_-j4Ta8IpEeir2fIY1agOnQ" id="DataQuality" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_-j4TbMIpEeir2fIY1agOnQ" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_-j4TbcIpEeir2fIY1agOnQ" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_-j4TbsIpEeir2fIY1agOnQ" id="DQTechnical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_-j4Tb8IpEeir2fIY1agOnQ" id="DataQualityDependencies" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_-j4TcMIpEeir2fIY1agOnQ" id="MDM" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_-j4TccIpEeir2fIY1agOnQ" id="TalendStringUtil" version="Latest" type="routine"/>
+    </ItemsRelations>
     <deletedFolders>process/AP1_POC/AP1_POC/getByID</deletedFolders>
     <deletedFolders>process/AP1_POC/AP1_POC</deletedFolders>
     <deletedFolders>process/AP1_POC/Error_Handling</deletedFolders>
