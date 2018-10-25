@@ -1016,6 +1016,25 @@
       <relatedItems xmi:id="_aoEo4MIoEeir2fIY1agOnQ" id="MDM" version="Latest" type="routine"/>
       <relatedItems xmi:id="_aoEo4cIoEeir2fIY1agOnQ" id="TalendStringUtil" version="Latest" type="routine"/>
     </ItemsRelations>
+    <ItemsRelations xmi:id="_9IoFENgcEeiBVJiSzt_2XA">
+      <baseItem xmi:id="_9IoFEdgcEeiBVJiSzt_2XA" id="_1bxjkNgbEeiBVJiSzt_2XA" version="0.1" type="job"/>
+      <relatedItems xmi:id="_9IoFEtgcEeiBVJiSzt_2XA" id="SQLike" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_9IoFE9gcEeiBVJiSzt_2XA" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_9IoFFNgcEeiBVJiSzt_2XA" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_9IoFFdgcEeiBVJiSzt_2XA" id="DataMasking" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_9IoFFtgcEeiBVJiSzt_2XA" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_9IoFF9gcEeiBVJiSzt_2XA" id="DqStringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_9IoFGNgcEeiBVJiSzt_2XA" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_9IoFGdgcEeiBVJiSzt_2XA" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_9IoFGtgcEeiBVJiSzt_2XA" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_9IoFG9gcEeiBVJiSzt_2XA" id="DataQuality" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_9IoFHNgcEeiBVJiSzt_2XA" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_9IoFHdgcEeiBVJiSzt_2XA" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_9IoFHtgcEeiBVJiSzt_2XA" id="DQTechnical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_9IoFH9gcEeiBVJiSzt_2XA" id="DataQualityDependencies" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_9IoFINgcEeiBVJiSzt_2XA" id="MDM" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_9IoFIdgcEeiBVJiSzt_2XA" id="TalendStringUtil" version="Latest" type="routine"/>
+    </ItemsRelations>
     <deletedFolders>process/AP1_POC/AP1_POC/getByID</deletedFolders>
     <deletedFolders>process/AP1_POC/AP1_POC</deletedFolders>
     <deletedFolders>process/AP1_POC/Error_Handling</deletedFolders>
